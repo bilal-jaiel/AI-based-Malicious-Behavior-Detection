@@ -127,9 +127,11 @@ jupyter notebook sorbonne_challenge_texte_optimise.ipynb
 
 ## 👨‍💻 Authors
 
-- **Bilâl Jaiel** – [LinkedIn](https://www.linkedin.com/in/bilal-jaiel/) [GitHub](https://github.com/bilal-jaiel)  
-- **Alexis Schneider**  - [LinkedIn](https://www.linkedin.com/in/alexis-schneider-a91079325/) [GitHub](https://github.com/Alexis-Schneider)
-- **Akram Halimi** - [LinkedIn](https://www.linkedin.com/in/akram-halimi-010217321/) [GitHub](https://github.com/A-Jassim)
+| Name              | 🔗 Links |
+|-------------------|----------|
+| **Bilâl Jaiel**     | [<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" height="20">](https://www.linkedin.com/in/bilal-jaiel/) [<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" height="20">](https://github.com/bilal-jaiel) |
+| **Alexis Schneider** | [<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" height="20">](https://www.linkedin.com/in/alexis-schneider-a91079325/) [<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" height="20">](https://github.com/Alexis-Schneider) |
+| **Akram Halimi**     | [<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" height="20">](https://www.linkedin.com/in/akram-halimi-010217321/) [<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" height="20">](https://github.com/A-Jassim) |
 
 ---
 
