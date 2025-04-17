@@ -1,0 +1,9 @@
+pandas
+networkx
+spacy
+scikit-learn
+tensorflow
+en-core-web-sm
+numpy==2.0.0
+scipy
+matplotlib
