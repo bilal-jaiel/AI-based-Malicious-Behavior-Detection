@@ -135,13 +135,13 @@ AI-based-Malicious-Behavior-Detection/
 git clone [URL_TO_REPO]
 
 # Navigate to the project folder
-cd detection_comportements_malveillants
+cd AI-based-Malicious-Behavior-Detection
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Launch the main notebook
-jupyter notebook sorbonne_challenge_texte_optimise.ipynb
+jupyter notebook main.ipynb
 ```
 
 ---
