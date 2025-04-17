@@ -117,8 +117,8 @@ AI-based-Malicious-Behavior-Detection/
 │   ├── 📄 your_data_updated.csv             # Behavioral training tags
 │   ├── 📄 predictions.csv                   # Prediction results (test)
 │   └── 📁 npz_matrices/
-│       ├── tfidf_matrix.npz                  # Complete TF-IDF matrix
-│       └── reduced_tfidf_matrix.npz          # Reduced version after selection of features / PCA
+│       ├── tf_batch_0.npz                  # Complete TF-IDF matrix
+│       └── tfidf_matrix.npz          # Reduced version after selection of features / PCA
 │
 └── 📁 visuals/                              # Visualizations (graphs, CFG, confusion matrix, etc.)
     ├── graph_example.png
