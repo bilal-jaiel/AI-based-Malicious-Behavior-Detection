@@ -127,9 +127,9 @@ jupyter notebook sorbonne_challenge_texte_optimise.ipynb
 
 ## 👨‍💻 Authors
 
-- **Bilâl Jaiel** – [GitHub](https://github.com/starc007)  
-- **Alexis Schneider**  
-- **Akram Halimi**
+- **Bilâl Jaiel** – [LinkedIn](https://www.linkedin.com/in/bilal-jaiel/) [GitHub](https://github.com/bilal-jaiel)  
+- **Alexis Schneider**  - [LinkedIn](https://www.linkedin.com/in/alexis-schneider-a91079325/) [GitHub](https://github.com/Alexis-Schneider)
+- **Akram Halimi** - [LinkedIn](https://www.linkedin.com/in/akram-halimi-010217321/) [GitHub](https://github.com/A-Jassim)
 
 ---
 
