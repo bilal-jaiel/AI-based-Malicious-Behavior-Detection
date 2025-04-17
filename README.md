@@ -1,6 +1,6 @@
 # 🛡️ AI-based-Malicious-Behavior-Detection
 
-> Cybersecurity and Artificial Intelligence Challenge organized by Université Paris I Panthéon-Sorbonne and the ComCyber unit of the French Ministry of the Interior.
+> Cybersecurity and Artificial Intelligence Challenge organized by [Université Paris I Panthéon-Sorbonne](https://www.pantheonsorbonne.fr) and the ComCyber unit of the French Ministry of the Interior, as part of the [Sorbonne Data Challenge](https://sorbonne-data-challenge.fr/).
 
 This project offers an automated analysis solution to detect **malicious behaviors** in Windows binaries (PE and DLL files), based on their **Control Flow Graph (CFG)**. Using NLP techniques, graph analysis, and supervised classification, our model predicts suspicious behaviors observed during sandbox execution.
 
