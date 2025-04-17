@@ -84,16 +84,16 @@ Target behaviors include:
 
 ```mermaid
 graph TD
-    A[.dot File (CFG)] --> B[Parsing & Instruction Extraction]
-    B --> C[Tokenization (TF-IDF)]
-    B --> D[Graph statistics extraction]
-    C --> E[Feature vector (text)]
-    D --> F[Feature vector (structural)]
-    E --> G[Feature concatenation]
+    A[".dot File (CFG)"] --> B["Parsing & Instruction Extraction"]
+    B --> C["Tokenization (TF-IDF)"]
+    B --> D["Graph statistics extraction"]
+    C --> E["Feature vector (text)"]
+    D --> F["Feature vector (structural)"]
+    E --> G["Feature concatenation"]
     F --> G
-    G --> H[Classification model]
-    H --> I[Behavior prediction]
-    I --> J[Evaluation & CSV Export]
+    G --> H["Classification model"]
+    H --> I["Behavior prediction"]
+    I --> J["Evaluation & CSV Export"]
 ```
 
 ---
