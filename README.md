@@ -1,1 +1,138 @@
 # AI-based-Malicious-Behavior-Detection
+
+> Cybersecurity and Artificial Intelligence Challenge organized by Université Paris I Panthéon-Sorbonne and the ComCyber unit of the French Ministry of the Interior.
+
+This project offers an automated analysis solution to detect **malicious behaviors** in Windows binaries (PE and DLL files), based on their **Control Flow Graph (CFG)**. Using NLP techniques, graph analysis, and supervised classification, our model predicts suspicious behaviors observed during sandbox execution.
+
+---
+
+## 📌 Objectives
+
+- Leverage **control flow graphs (CFGs)** to analyze the execution logic of programs.
+- Develop a model capable of **automatically predicting** potentially malicious behaviors.
+- Provide analysts with a fast and reliable tool to **accelerate threat detection**.
+
+---
+
+## 🧠 Modeling Approach
+
+The processing pipeline follows five main steps:
+
+### 1. Parsing & Preprocessing
+- Read `.dot` files representing the CFG of each binary.
+- Extract assembly instructions and block relations using `NetworkX`.
+- Clean up graphs and standardize instructions.
+
+### 2. Tokenization & Vectorization
+- **Tokenize** instructions (`mov`, `jmp`, `call`, etc.) to extract opcodes and operands.
+- Apply **TF-IDF** on instruction sequences to capture frequent malicious patterns.
+- Create textual representations usable by classifiers.
+
+### 3. Feature Engineering
+- Global graph statistics: number of nodes, edges, presence of cycles, max depth, etc.
+- Hybrid representation combining **structural features** and **textual features**.
+
+### 4. Supervised Modeling
+- Train multiclass/multi-label models:
+  - `Random Forest`, `Logistic Regression`, etc.
+- Use **One-vs-Rest** strategy to handle the multi-label nature of behaviors.
+- Data splitting with cross-validation and grid search.
+
+### 5. Evaluation & Export
+- Evaluate using **Macro F1-score** (robust to class imbalance).
+- Visualize results:
+  - Confusion matrices, distributions, CFG graphs.
+- Generate prediction `.csv` file in One-Hot format for final submission.
+
+---
+
+## ⚙️ Technologies Used
+
+- **Language:** Python 3.6+
+- **Environment:** Jupyter Notebook
+- **Libraries:**
+  - `pandas`, `numpy` – data handling
+  - `scikit-learn` – classification and evaluation models
+  - `networkx`, `graphviz` – graph processing and visualization
+  - `matplotlib`, `seaborn` – result visualization
+  - `re`, `os`, `glob` – `.dot` file parsing
+
+---
+
+## 🕵️ Business Context
+
+This project addresses a **real-world cybersecurity problem**: automating the detection of suspicious behaviors in binaries executed in a controlled environment.  
+It uses data provided by **CNENUM**, ComCyber's expertise center, as part of a **high-level Data Challenge**.
+
+Target behaviors include:
+- Abnormal memory read/write,
+- Unauthorized network connections,
+- Windows Registry modification,
+- Shell execution or code injection.
+
+---
+
+## 📈 Results Achieved
+
+- Built a robust end-to-end pipeline: parsing, feature engineering, training, and prediction.
+- Good overall performance in Macro F1-score (official challenge metric).
+- Model generalizable to other detection contexts (obfuscated software, other OSs…).
+
+---
+
+## 🔄 Global Pipeline
+
+```mermaid
+graph TD
+    A[.dot File (CFG)] --> B[Parsing & Instruction Extraction]
+    B --> C[Tokenization (TF-IDF)]
+    B --> D[Graph statistics extraction]
+    C --> E[Feature vector (text)]
+    D --> F[Feature vector (structural)]
+    E --> G[Feature concatenation]
+    F --> G
+    G --> H[Classification model]
+    H --> I[Behavior prediction]
+    I --> J[Evaluation & CSV Export]
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+# Clone the repository
+git clone [URL_TO_REPO]
+
+# Navigate to the project folder
+cd detection_comportements_malveillants
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch the main notebook
+jupyter notebook sorbonne_challenge_texte_optimise.ipynb
+```
+
+---
+
+## 🔧 Future Improvements
+
+- Implement a **GNN (Graph Neural Network)** model to directly process CFGs as graphs.
+- Advanced representations (Word2Vec on instructions, graph embeddings).
+- Integrate a **web dashboard** to visualize threats.
+- CI/CD pipeline for full automation.
+
+---
+
+## 👨‍💻 Authors
+
+- **Bilâl Jaiel** – [GitHub](https://github.com/starc007)  
+- **Alexis Schneider**  
+- **Akram Halimi**
+
+---
+
+## 📄 License
+
+Distributed under the MIT license. See the [LICENSE](LICENSE) file for more information.
