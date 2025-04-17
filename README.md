@@ -109,7 +109,7 @@ AI-based-Malicious-Behavior-Detection/
 ├── 📄 Briefing_Data_Challenge.pdf           # Official challenge statement
 │
 ├── 📁 notebooks/
-│   └── 📄 sorbonne_challenge_texte_optimisé.ipynb   # Main notebook with complete pipeline
+│   └── 📄 main.ipynb                        # Main notebook with complete pipeline
 │
 ├── 📁 data/
 │   ├── 📁 digraphs/                         # CFG .dot files
