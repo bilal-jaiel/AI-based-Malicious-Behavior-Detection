@@ -132,7 +132,7 @@ AI-based-Malicious-Behavior-Detection/
 
 ```bash
 # Clone the repository
-git clone [URL_TO_REPO]
+git clone https://github.com/bilal-jaiel/AI-based-Malicious-Behavior-Detection.git
 
 # Navigate to the project folder
 cd AI-based-Malicious-Behavior-Detection
@@ -141,7 +141,7 @@ cd AI-based-Malicious-Behavior-Detection
 pip install -r requirements.txt
 
 # Launch the main notebook
-jupyter notebook main.ipynb
+jupyter notebook notebooks/main.ipynb
 ```
 
 ---
