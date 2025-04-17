@@ -1,4 +1,4 @@
-# AI-based-Malicious-Behavior-Detection
+# 🛡️ AI-based-Malicious-Behavior-Detection
 
 > Cybersecurity and Artificial Intelligence Challenge organized by Université Paris I Panthéon-Sorbonne and the ComCyber unit of the French Ministry of the Interior.
 
