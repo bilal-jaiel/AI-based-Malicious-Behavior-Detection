@@ -101,30 +101,29 @@ graph TD
 ## 📂 Project Directory Structure
 
 ```plaintext
-Detection_Comportements_Malveillants/
+AI-based-Malicious-Behavior-Detection/
 │
-├── 📄 README.md                             # Documentation principale (FR ou EN)
-├── 📄 requirements.txt                      # Dépendances Python à installer
-├── 📄 LICENSE                               # Licence du projet (MIT)
-├── 📄 Briefing_Data_Challenge.pdf           # Énoncé officiel du challenge
+├── 📄 README.md                             # Main documentation
+├── 📄 requirements.txt                      # Python dependencies to install
+├── 📄 LICENSE                               # Project license (MIT)
+├── 📄 Briefing_Data_Challenge.pdf           # Official challenge statement
 │
 ├── 📁 notebooks/
-│   └── 📄 sorbonne_challenge_texte_optimisé.ipynb   # Notebook principal avec le pipeline complet
+│   └── 📄 sorbonne_challenge_texte_optimisé.ipynb   # Main notebook with complete pipeline
 │
 ├── 📁 data/
-│   ├── 📁 digraphs/                          # Fichiers .dot représentant les CFG
+│   ├── 📁 digraphs/                         # CFG .dot files
 │   ├── 📄 training_set_metadata.csv         # Étiquettes comportementales d'entraînement
-│   ├── 📄 your_data_updated.csv             # Fichier modifié / enrichi si besoin
-│   ├── 📄 predictions.csv                   # Résultats de prédiction (test)
+│   ├── 📄 your_data_updated.csv             # Behavioral training tags
+│   ├── 📄 predictions.csv                   # Prediction results (test)
 │   └── 📁 npz_vectors/
-│       ├── tfidf_matrix.npz                # Matrice TF-IDF complète
-│       └── reduced_tfidf_matrix.npz        # (Optionnel) Version réduite après sélection de features / PCA
+│       ├── tfidf_matrix.npz                  # Complete TF-IDF matrix
+│       └── reduced_tfidf_matrix.npz          # Reduced version after selection of features / PCA
 │
-├── 📁 visuals/                               # Visualisations (graphiques, CFG, confusion matrix...)
-│   ├── graph_example.png
-│   └── confusion_matrix.png
-│
-└── 📄 readme git.txt                         # Ancienne version brute du README (archivée)
+└── 📁 visuals/                              # Visualizations (graphs, CFG, confusion matrix, etc.)
+    ├── graph_example.png
+    └── confusion_matrix.png
+```
 
 ---
 
