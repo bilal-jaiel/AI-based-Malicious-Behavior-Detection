@@ -104,6 +104,7 @@ graph TD
 AI-based-Malicious-Behavior-Detection/
 │
 ├── 📄 README.md                             # Main documentation
+├── 📄 requirements.txt                      # Dépendances Python à installer
 ├── 📄 requirements.txt                      # Python dependencies to install
 ├── 📄 LICENSE                               # Project license (MIT)
 ├── 📄 Briefing_Data_Challenge.pdf           # Official challenge statement
