@@ -1,0 +1,1281 @@
+Digraph G {
+"4046dd" [label = "4046dd : CALL : sub esp, 0x100"]
+"4046dd" -> "4046e9"
+"4046dd" -> "404dd5"
+"4046e9" [label = "4046e9 : CALL : mov edi, esp"]
+"4046e9" -> "4046f1"
+"4046e9" -> "dead0def"
+"4046f1" [label = "4046f1 : JCC : cmp eax, -1"]
+"4046f1" -> "4046f6"
+"4046f1" -> "404713"
+"4046f6" [label = "4046f6 : CALL : mov ebx, eax"]
+"4046f6" -> "4046fd"
+"4046f6" -> "405a82"
+"4046fd" [label = "4046fd : CALL : push 0 : topStack=0x0 "]
+"4046fd" -> "404705"
+"4046fd" -> "dead0def"
+"404705" [label = "404705 : CALL : push ebx"]
+"404705" -> "40470b"
+"404705" -> "40526e"
+"40470b" [label = "40470b : CALL : mov edi, esp"]
+"40470b" -> "404713"
+"40470b" -> "dead0def"
+"404713" [label = "404713 : CALL : push eax"]
+"404713" -> "40471a"
+"404713" -> "404748"
+"40471a" [label = "40471a : JCC : push ebx"]
+"40471a" -> "40472d"
+"40471a" -> "404789"
+"40472d" [label = "40472d : JCC : push edi"]
+"40472d" -> "404738"
+"40472d" -> "4047b0"
+"404738" [label = "404738 : JCC : jb 0x40479f"]
+"404738" -> "40473a"
+"404738" -> "40479f"
+"40473a" [label = "40473a : JCC : outsb dx, byte ptr [esi]"]
+"40473a" -> "40473d"
+"40473a" -> "404793"
+"40473d" [label = "40473d : JCC : jb 0x4047b3"]
+"40473d" -> "404740"
+"40473d" -> "4047b3"
+"404740" [label = "404740 : INST : imul ebp, dword ptr [edi + 0x6e], 0x6e75525c"]
+"404740" -> "404756"
+"404748" [label = "404748 : CALL : push 0x80000002 : topStack=0x80000002 "]
+"404748" -> "404753"
+"404748" -> "dead0def"
+"404753" [label = "404753 : INST : pop ebx"]
+"404753" -> "404756"
+"404756" [label = "404756 : CALL : call 0x404763"]
+"404756" -> "40475b"
+"404756" -> "404763"
+"40475b" [label = "40475b : JCC : push edx"]
+"40475b" -> "40475e"
+"40475b" -> "4047cc"
+"40475e" [label = "40475e : INST : outsd dx, dword ptr [esi]"]
+"40475e" -> "404763"
+"404763" [label = "404763 : CALL : pop ecx"]
+"404763" -> "404776"
+"404763" -> "dead0def"
+"404776" [label = "404776 : CALL : call 0x40477b"]
+"404776" -> "40477b"
+"404776" -> "40477b"
+"40477b" [label = "40477b : INST : pop edi"]
+"40477b" -> "4047a8"
+"404789" [label = "404789 : INST : xchg byte ptr [eax + eax - 0x78770000], ah"]
+"404789" -> "40479f"
+"404793" [label = "404793 : INST : add byte ptr [ebx + 0xac86], cl"]
+"404793" -> "40479f"
+"40479f" [label = "40479f : INST : add byte ptr [ebp + 0x155d87], cl"]
+"40479f" -> "4047a8"
+"4047a8" [label = "4047a8 : INST : push 0 : topStack=0x0 "]
+"4047a8" -> "4047b0"
+"4047b0" [label = "4047b0 : CALL : call dword ptr [esi + 0x74]"]
+"4047b0" -> "4047b3"
+"4047b0" -> "dead0def"
+"4047b3" [label = "4047b3 : CALL : pop eax"]
+"4047b3" -> "4047c8"
+"4047b3" -> "404dd5"
+"4047c8" [label = "4047c8 : CALL : call 0x4047cd"]
+"4047c8" -> "4047cd"
+"4047c8" -> "4047cd"
+"4047cc" [label = "4047cc : INST : add byte ptr [edi - 0x75], bl"]
+"4047cc" -> "4047d1"
+"4047cd" [label = "4047cd : INST : pop edi"]
+"4047cd" -> "4047d1"
+"4047d1" [label = "4047d1 : JCC : mov dword ptr [edi + 0x157b], eax"]
+"4047d1" -> "4047f0"
+"4047d1" -> "40485f"
+"4047f0" [label = "4047f0 : CALL : push 1 : topStack=0x1 "]
+"4047f0" -> "4047f6"
+"4047f0" -> "dead0def"
+"4047f6" [label = "4047f6 : JCC : mov edx, dword ptr [esi + 0xe0]"]
+"4047f6" -> "404815"
+"4047f6" -> "40485d"
+"404815" [label = "404815 : CALL : add ebp, edx"]
+"404815" -> "40482a"
+"404815" -> "405d8e"
+"40482a" [label = "40482a : CALL : lea ecx, [ebp + 0x4e]"]
+"40482a" -> "40483e"
+"40482a" -> "405d8e"
+"40483e" [label = "40483e : CALL : call dword ptr [esi + 0x4c]"]
+"40483e" -> "404841"
+"40483e" -> "dead0def"
+"404841" [label = "404841 : CALL : push eax"]
+"404841" -> "40484e"
+"404841" -> "dead0def"
+"40484e" [label = "40484e : CALL : mov dword ptr [esi + 0xe8], eax"]
+"40484e" -> "40485d"
+"40484e" -> "dead0def"
+"40485d" [label = "40485d : HLT : int3  : ecx<0x1ff "]
+"40485f" [label = "40485f : CALL : push 0 : topStack=0x0 "]
+"40485f" -> "404869"
+"40485f" -> "dead0def"
+"404869" [label = "404869 : CALL : push eax"]
+"404869" -> "404872"
+"404869" -> "dead0def"
+"404872" [label = "404872 : CALL : push 0 : topStack=0x0 "]
+"404872" -> "40487c"
+"404872" -> "dead0def"
+"40487c" [label = "40487c : JCC : or eax, eax"]
+"40487c" -> "404880"
+"40487c" -> "4048ef"
+"404880" [label = "404880 : CALL : mov ebx, eax"]
+"404880" -> "404894"
+"404880" -> "dead0def"
+"404894" [label = "404894 : JCC : or eax, eax"]
+"404894" -> "404898"
+"404894" -> "4048e3"
+"404898" [label = "404898 : CALL : mov ebp, eax"]
+"404898" -> "4048ae"
+"404898" -> "dead0def"
+"4048ae" [label = "4048ae : JCC : pop eax"]
+"4048ae" -> "4048b7"
+"4048ae" -> "4048e3"
+"4048b7" [label = "4048b7 : CALL : mov edx, esp"]
+"4048b7" -> "4048cc"
+"4048b7" -> "dead0def"
+"4048cc" [label = "4048cc : CALL : call dword ptr [esi + 0x4c]"]
+"4048cc" -> "4048cf"
+"4048cc" -> "dead0def"
+"4048cf" [label = "4048cf : CALL : push esp"]
+"4048cf" -> "4048dc"
+"4048cf" -> "dead0def"
+"4048dc" [label = "4048dc : INST : mov dword ptr [esi + 0xe8], eax"]
+"4048dc" -> "4048e3"
+"4048e3" [label = "4048e3 : CALL : push ebx"]
+"4048e3" -> "4048e7"
+"4048e3" -> "dead0def"
+"4048e7" [label = "4048e7 : CALL : push 0x1f4 : topStack=0x1f4 "]
+"4048e7" -> "4048ef"
+"4048e7" -> "dead0def"
+"4048ef" [label = "4048ef : HLT : int3 "]
+"404dd5" [label = "404dd5 : CALL : enter 0, 0"]
+"404dd5" -> "404de6"
+"404dd5" -> "dead0def"
+"404de6" [label = "404de6 : CALL : add edi, eax"]
+"404de6" -> "404ded"
+"404de6" -> "404dfa"
+"404ded" [label = "404ded : JCC : pop esp"]
+"404ded" -> "404df0"
+"404ded" -> "404e65"
+"404df0" [label = "404df0 : JCC : outsb dx, byte ptr [esi]"]
+"404df0" -> "404df4"
+"404df0" -> "404e57"
+"404df4" [label = "404df4 : JCC : js 0x404e5e"]
+"404df4" -> "404df9"
+"404df4" -> "404e5e"
+"404df9" [label = "404df9 : INST : add byte ptr [esi - 0x47], bl"]
+"404df9" -> "404e00"
+"404dfa" [label = "404dfa : INST : pop esi"]
+"404dfa" -> "404e00"
+"404e00" [label = "404e00 : RET : cld  : ecx=0x10 "]
+"404e57" [label = "404e57 : RET : add byte ptr [eax], al"]
+"404e5e" [label = "404e5e : CALL : call 0x404e79"]
+"404e5e" -> "404e63"
+"404e5e" -> "404e79"
+"404e63" [label = "404e63 : RET : ret "]
+"404e65" [label = "404e65 : CALL : push edi"]
+"404e65" -> "404e6d"
+"404e65" -> "404e79"
+"404e6d" [label = "404e6d : RET : ret "]
+"404e79" [label = "404e79 : CALL : enter 0, 0"]
+"404e79" -> "404e90"
+"404e79" -> "dead0def"
+"404e90" [label = "404e90 : JCC : pop ebx"]
+"404e90" -> "404e95"
+"404e90" -> "404ecd"
+"404e95" [label = "404e95 : INST : sub esp, 0x1000"]
+"404e95" -> "404eaa"
+"404eaa" [label = "404eaa : CALL : call dword ptr [esi + 0xb4]"]
+"404eaa" -> "404eb0"
+"404eaa" -> "dead0def"
+"404eb0" [label = "404eb0 : JCC : pop ecx"]
+"404eb0" -> "404eb6"
+"404eb0" -> "404ebe"
+"404eb6" [label = "404eb6 : CALL : mov edi, esp"]
+"404eb6" -> "404ebb"
+"404eb6" -> "dead0def"
+"404ebb" [label = "404ebb : JMP : jmp 0x404e9b"]
+"404ebb" -> "404eaa"
+"404ebe" [label = "404ebe : CALL : push ebx"]
+"404ebe" -> "404ec5"
+"404ebe" -> "dead0def"
+"404ec5" [label = "404ec5 : INST : add esp, 0x1000"]
+"404ec5" -> "404ecd"
+"404ecd" [label = "404ecd : RET : ret 0xc"]
+"404ed1" [label = "404ed1 : JCC : enter 0, 0"]
+"404ed1" -> "404ee7"
+"404ed1" -> "404f5f"
+"404ee7" [label = "404ee7 : JCC : cmp eax, 0x646e6977"]
+"404ee7" -> "404eee"
+"404ee7" -> "404f5f"
+"404eee" [label = "404eee : CALL : push dword ptr [ebp + 8]"]
+"404eee" -> "404ef4"
+"404eee" -> "dead0def"
+"404ef4" [label = "404ef4 : JCC : or eax, eax"]
+"404ef4" -> "404ef8"
+"404ef4" -> "404f5f"
+"404ef8" [label = "404ef8 : CALL : push dword ptr [ebp + 8]"]
+"404ef8" -> "404f00"
+"404ef8" -> "404f63"
+"404f00" [label = "404f00 : CALL : sub esp, 0x1000"]
+"404f00" -> "404f14"
+"404f00" -> "dead0def"
+"404f14" [label = "404f14 : JCC : mov ebx, eax"]
+"404f14" -> "404f1b"
+"404f14" -> "404f4c"
+"404f1b" [label = "404f1b : CALL : push esp"]
+"404f1b" -> "404f20"
+"404f1b" -> "dead0def"
+"404f20" [label = "404f20 : JCC : or eax, eax"]
+"404f20" -> "404f24"
+"404f20" -> "404f48"
+"404f24" [label = "404f24 : JCC : lea edx, [esp + 0x2c]"]
+"404f24" -> "404f30"
+"404f24" -> "404f3f"
+"404f30" [label = "404f30 : JCC : mov eax, dword ptr [edx]"]
+"404f30" -> "404f36"
+"404f30" -> "404f1b"
+"404f36" [label = "404f36 : CALL : push edx"]
+"404f36" -> "404f3c"
+"404f36" -> "404ed1"
+"404f3c" [label = "404f3c : JMP : jmp 0x404f1b"]
+"404f3c" -> "404f1b"
+"404f3f" [label = "404f3f : CALL : push esp : eax<0x10 "]
+"404f3f" -> "404f45"
+"404f3f" -> "404f85"
+"404f45" [label = "404f45 : JMP : jmp 0x404f1b"]
+"404f45" -> "404f1b"
+"404f48" [label = "404f48 : CALL : push ebx"]
+"404f48" -> "404f4c"
+"404f48" -> "dead0def"
+"404f4c" [label = "404f4c : CALL : mov dword ptr [esp], 0x2e2e"]
+"404f4c" -> "404f57"
+"404f4c" -> "dead0def"
+"404f57" [label = "404f57 : INST : add esp, 0x1000"]
+"404f57" -> "404f5f"
+"404f5f" [label = "404f5f : RET : ret 4"]
+"404f63" [label = "404f63 : CALL : enter 0, 0"]
+"404f63" -> "404f6d"
+"404f63" -> "404f73"
+"404f6d" [label = "404f6d : RET : popal "]
+"404f73" [label = "404f73 : CALL : pop ecx"]
+"404f73" -> "404f79"
+"404f73" -> "405a1e"
+"404f79" [label = "404f79 : CALL : call 0x404fa7"]
+"404f79" -> "404f7e"
+"404f79" -> "404fa7"
+"404f7e" [label = "404f7e : CALL : push dword ptr [ebp + 8]"]
+"404f7e" -> "404f83"
+"404f7e" -> "dead0def"
+"404f83" [label = "404f83 : HLT : int3 "]
+"404f85" [label = "404f85 : CALL : enter 0, 0"]
+"404f85" -> "404f8f"
+"404f85" -> "404f95"
+"404f8f" [label = "404f8f : RET : popal "]
+"404f95" [label = "404f95 : CALL : pop ecx"]
+"404f95" -> "404f9b"
+"404f95" -> "405a1e"
+"404f9b" [label = "404f9b : CALL : call 0x404fb3"]
+"404f9b" -> "404fa0"
+"404f9b" -> "404fb3"
+"404fa0" [label = "404fa0 : CALL : push dword ptr [ebp + 8]"]
+"404fa0" -> "404fa5"
+"404fa0" -> "dead0def"
+"404fa5" [label = "404fa5 : HLT : int3 "]
+"404fa7" [label = "404fa7 : CALL : call 0x404fb0"]
+"404fa7" -> "404fac"
+"404fa7" -> "404fb0"
+"404fac" [label = "404fac : INVALID"]
+"404fb0" [label = "404fb0 : RET : pop edx"]
+"404fb3" [label = "404fb3 : CALL : call 0x404fbc"]
+"404fb3" -> "404fb8"
+"404fb3" -> "404fbc"
+"404fb8" [label = "404fb8 : RET : salc "]
+"404fbc" [label = "404fbc : RET : pop edx"]
+"404feb" [label = "404feb : CALL : sub esp, 0x100"]
+"404feb" -> "404ff7"
+"404feb" -> "404dd5"
+"404ff7" [label = "404ff7 : CALL : mov edi, esp"]
+"404ff7" -> "404fff"
+"404ff7" -> "dead0def"
+"404fff" [label = "404fff : JCC : cmp eax, -1"]
+"404fff" -> "405004"
+"404fff" -> "405044"
+"405004" [label = "405004 : CALL : mov ebx, eax"]
+"405004" -> "405016"
+"405004" -> "dead0def"
+"405016" [label = "405016 : CALL : pop eax"]
+"405016" -> "40502c"
+"405016" -> "dead0def"
+"40502c" [label = "40502c : JCC : cmp eax, -1"]
+"40502c" -> "405031"
+"40502c" -> "405040"
+"405031" [label = "405031 : CALL : mov edi, eax"]
+"405031" -> "40503c"
+"405031" -> "4054d1"
+"40503c" [label = "40503c : CALL : push edi"]
+"40503c" -> "405040"
+"40503c" -> "dead0def"
+"405040" [label = "405040 : CALL : push ebx"]
+"405040" -> "405044"
+"405040" -> "dead0def"
+"405044" [label = "405044 : RET : add esp, 0x100"]
+"405098" [label = "405098 : CALL : sub esp, 0x100"]
+"405098" -> "4050a5"
+"405098" -> "dead0def"
+"4050a5" [label = "4050a5 : JCC : mov ax, word ptr [esp + 6]"]
+"4050a5" -> "4050b6"
+"4050a5" -> "4050d1"
+"4050b6" [label = "4050b6 : CALL : push 2 : topStack=0x2 "]
+"4050b6" -> "4050bc"
+"4050b6" -> "dead0def"
+"4050bc" [label = "4050bc : JCC : cmp eax, -1"]
+"4050bc" -> "4050c1"
+"4050bc" -> "4050d1"
+"4050c1" [label = "4050c1 : CALL : mov ebx, eax"]
+"4050c1" -> "4050cd"
+"4050c1" -> "dead0def"
+"4050cd" [label = "4050cd : CALL : push ebx"]
+"4050cd" -> "4050d1"
+"4050cd" -> "dead0def"
+"4050d1" [label = "4050d1 : RET : leave "]
+"405140" [label = "405140 : CALL : push 0 : topStack=0x0 "]
+"405140" -> "405146"
+"405140" -> "dead0def"
+"405146" [label = "405146 : CALL : push 2 : topStack=0x2 "]
+"405146" -> "40514c"
+"405146" -> "dead0def"
+"40514c" [label = "40514c : JCC : cmp eax, -1"]
+"40514c" -> "405151"
+"40514c" -> "40516d"
+"405151" [label = "405151 : CALL : mov ebx, eax"]
+"405151" -> "405159"
+"405151" -> "40526e"
+"405159" [label = "405159 : CALL : lea eax, [edi + 4]"]
+"405159" -> "405169"
+"405159" -> "dead0def"
+"405169" [label = "405169 : CALL : push ebx"]
+"405169" -> "40516d"
+"405169" -> "dead0def"
+"40516d" [label = "40516d : CALL : lea ebx, [edi + 0x2c]"]
+"40516d" -> "405176"
+"40516d" -> "dead0def"
+"405176" [label = "405176 : RET : leave "]
+"405180" [label = "405180 : CALL : sub esp, 0x100"]
+"405180" -> "40518c"
+"405180" -> "404dd5"
+"40518c" [label = "40518c : CALL : mov eax, esp"]
+"40518c" -> "405194"
+"40518c" -> "dead0def"
+"405194" [label = "405194 : JCC : add esp, 0x100"]
+"405194" -> "4051a3"
+"405194" -> "40526a"
+"4051a3" [label = "4051a3 : CALL : mov ebx, eax"]
+"4051a3" -> "4051aa"
+"4051a3" -> "4051b5"
+"4051aa" [label = "4051aa : JCC : jb 0x405211"]
+"4051aa" -> "4051ac"
+"4051aa" -> "405211"
+"4051ac" [label = "4051ac : JCC : popal "]
+"4051ac" -> "4051bd"
+"4051ac" -> "405140"
+"4051b5" [label = "4051b5 : CALL : pop eax"]
+"4051b5" -> "4051bc"
+"4051b5" -> "dead0def"
+"4051bc" [label = "4051bc : JCC : cmp eax, -1"]
+"4051bc" -> "4051c5"
+"4051bc" -> "405264"
+"4051bd" [label = "4051bd : INST : clc "]
+"4051bd" -> "4051cb"
+"4051c5" [label = "4051c5 : INST : mov edi, eax"]
+"4051c5" -> "4051cb"
+"4051cb" [label = "4051cb : CALL : call 0x4054d1"]
+"4051cb" -> "4051d0"
+"4051cb" -> "4054d1"
+"4051d0" [label = "4051d0 : CALL : push edi"]
+"4051d0" -> "4051d4"
+"4051d0" -> "dead0def"
+"4051d4" [label = "4051d4 : CALL : mov edi, dword ptr [ebp + 8]"]
+"4051d4" -> "4051df"
+"4051d4" -> "dead0def"
+"4051df" [label = "4051df : CALL : call 0x40525c"]
+"4051df" -> "4051e4"
+"4051df" -> "40525c"
+"4051e4" [label = "4051e4 : JCC : or eax, 0x74683c0a"]
+"4051e4" -> "4051f3"
+"4051e4" -> "405267"
+"4051f3" [label = "4051f3 : JCC : and byte ptr [ecx + 0x6e], ch"]
+"4051f3" -> "4051fa"
+"4051f3" -> "40525b"
+"4051fa" [label = "4051fa : JCC : cmp eax, 0x76614a22"]
+"4051fa" -> "405208"
+"4051fa" -> "40527c"
+"405208" [label = "405208 : JCC : and bh, byte ptr [esi]"]
+"405208" -> "40520c"
+"405208" -> "405275"
+"40520c" [label = "40520c : JCC : outsb dx, byte ptr [esi]"]
+"40520c" -> "405211"
+"40520c" -> "40523f"
+"405211" [label = "405211 : JCC : outsd dx, dword ptr [esi]"]
+"405211" -> "405214"
+"405211" -> "405279"
+"405214" [label = "405214 : JCC : outsb dx, byte ptr [esi]"]
+"405214" -> "405219"
+"405214" -> "405284"
+"405219" [label = "405219 : JCC : popal "]
+"405219" -> "405227"
+"405219" -> "405295"
+"405227" [label = "405227 : JCC : insb byte ptr es:[edi], dx"]
+"405227" -> "40522c"
+"405227" -> "405291"
+"40522c" [label = "40522c : JCC : jae 0x405297"]
+"40522c" -> "40522e"
+"40522c" -> "405297"
+"40522e" [label = "40522e : JCC : jp 0x405291"]
+"40522e" -> "405230"
+"40522e" -> "405291"
+"405230" [label = "405230 : JCC : bound ebp, qword ptr [ebp + 0x3d]"]
+"405230" -> "40523b"
+"405230" -> "405278"
+"40523b" [label = "40523b : INST : xor byte ptr ss:[eax], dh"]
+"40523b" -> "405241"
+"40523f" [label = "40523f : INST : sub al, 0x6c"]
+"40523f" -> "405241"
+"405241" [label = "405241 : JCC : je 0x405282"]
+"405241" -> "405245"
+"405241" -> "405282"
+"405245" [label = "405245 : JCC : xor byte ptr ss:[eax], dh"]
+"405245" -> "40524f"
+"405245" -> "4052b2"
+"40524f" [label = "40524f : JCC : jb 0x4052ba"]
+"40524f" -> "405251"
+"40524f" -> "4052ba"
+"405251" [label = "405251 : JCC : jo 0x4052c7"]
+"405251" -> "405253"
+"405251" -> "4052c7"
+"405253" [label = "405253 : INST : cmp al, 0x2f"]
+"405253" -> "40525b"
+"40525b" [label = "40525b : JCC : add byte ptr [eax + 0x6a], bl"]
+"40525b" -> "405260"
+"40525b" -> "4052b0"
+"40525c" [label = "40525c : INST : pop eax"]
+"40525c" -> "405260"
+"405260" [label = "405260 : CALL : push edi"]
+"405260" -> "405264"
+"405260" -> "dead0def"
+"405264" [label = "405264 : CALL : push ebx"]
+"405264" -> "40526a"
+"405264" -> "dead0def"
+"405267" [label = "405267 : INST : inc eax"]
+"405267" -> "40526a"
+"40526a" [label = "40526a : RET : ret 4"]
+"40526e" [label = "40526e : INST : enter 0, 0"]
+"40526e" -> "405279"
+"405275" [label = "405275 : INST : add byte ptr [eax], dl"]
+"405275" -> "405279"
+"405278" [label = "405278 : INST : add byte ptr [ebx + 0x100068fc], cl"]
+"405278" -> "405284"
+"405279" [label = "405279 : INST : mov edi, esp"]
+"405279" -> "405284"
+"40527c" [label = "40527c : INST : add byte ptr [eax], dl"]
+"40527c" -> "405284"
+"405282" [label = "405282 : JCC : jne 0x40528c"]
+"405282" -> "405284"
+"405282" -> "40528c"
+"405284" [label = "405284 : CALL : call dword ptr [esi + 0x34]"]
+"405284" -> "405287"
+"405284" -> "dead0def"
+"405287" [label = "405287 : INST : movzx eax, word ptr [edi + 0x3c]"]
+"405287" -> "40528f"
+"40528c" [label = "40528c : INST : clc "]
+"40528c" -> "40528f"
+"40528f" [label = "40528f : JCC : ja 0x405369"]
+"40528f" -> "405295"
+"40528f" -> "405369"
+"405291" [label = "405291 : INST : aam 0"]
+"405291" -> "405295"
+"405295" [label = "405295 : INST : cmp word ptr [edi], 0x4550"]
+"405295" -> "40529a"
+"405297" [label = "405297 : INST : aas "]
+"405297" -> "40529a"
+"40529a" [label = "40529a : JCC : jne 0x405369"]
+"40529a" -> "4052a0"
+"40529a" -> "405369"
+"4052a0" [label = "4052a0 : INST : lea ebx, [edi + 0xf8]"]
+"4052a0" -> "4052ab"
+"4052ab" [label = "4052ab : JCC : add ebx, 0x28"]
+"4052ab" -> "4052b0"
+"4052ab" -> "4052ab"
+"4052b0" [label = "4052b0 : INST : cmp ebx, ebp"]
+"4052b0" -> "4052b2"
+"4052b2" [label = "4052b2 : JCC : ja 0x405369"]
+"4052b2" -> "4052b8"
+"4052b2" -> "405369"
+"4052b8" [label = "4052b8 : JCC : mov eax, dword ptr [edi + 0x28]"]
+"4052b8" -> "4052c0"
+"4052b8" -> "4052e3"
+"4052ba" [label = "4052ba : INST : sub byte ptr [ebx], ch"]
+"4052ba" -> "4052c7"
+"4052c0" [label = "4052c0 : INST : add eax, dword ptr [ebx + 0x14]"]
+"4052c0" -> "4052c9"
+"4052c7" [label = "4052c7 : JCC : jne 0x4052d1"]
+"4052c7" -> "4052c9"
+"4052c7" -> "4052d1"
+"4052c9" [label = "4052c9 : CALL : call dword ptr [esi + 0x3c]"]
+"4052c9" -> "4052cc"
+"4052c9" -> "dead0def"
+"4052cc" [label = "4052cc : INST : push eax"]
+"4052cc" -> "4052d1"
+"4052d1" [label = "4052d1 : CALL : push eax"]
+"4052d1" -> "4052d8"
+"4052d1" -> "dead0def"
+"4052d8" [label = "4052d8 : JCC : pop eax"]
+"4052d8" -> "4052e3"
+"4052d8" -> "405369"
+"4052e3" [label = "4052e3 : CALL : or dword ptr [ebx + 0x24], 0xe0000000"]
+"4052e3" -> "4052f4"
+"4052e3" -> "dead0def"
+"4052f4" [label = "4052f4 : JCC : cmp eax, -1"]
+"4052f4" -> "4052f9"
+"4052f4" -> "405369"
+"4052f9" [label = "4052f9 : JCC : push eax"]
+"4052f9" -> "40530c"
+"4052f9" -> "405322"
+"40530c" [label = "40530c : INST : mov dword ptr [ebx + 8], eax"]
+"40530c" -> "405322"
+"405322" [label = "405322 : CALL : pop ecx"]
+"405322" -> "405334"
+"405322" -> "405334"
+"405334" [label = "405334 : CALL : pop edi"]
+"405334" -> "40534c"
+"405334" -> "dead0def"
+"40534c" [label = "40534c : JCC : cmp eax, -1"]
+"40534c" -> "405351"
+"40534c" -> "405369"
+"405351" [label = "405351 : CALL : push 0 : topStack=0x0 "]
+"405351" -> "40535b"
+"405351" -> "dead0def"
+"40535b" [label = "40535b : CALL : mov eax, esp"]
+"40535b" -> "405369"
+"40535b" -> "dead0def"
+"405369" [label = "405369 : RET : add esp, 0x1000"]
+"405375" [label = "405375 : CALL : enter 0, 0"]
+"405375" -> "405386"
+"405375" -> "404dd5"
+"405386" [label = "405386 : CALL : mov edi, esp"]
+"405386" -> "40538e"
+"405386" -> "dead0def"
+"40538e" [label = "40538e : JCC : cmp eax, -1"]
+"40538e" -> "405393"
+"40538e" -> "4053a2"
+"405393" [label = "405393 : CALL : mov ebx, eax"]
+"405393" -> "40539e"
+"405393" -> "405575"
+"40539e" [label = "40539e : CALL : push ebx"]
+"40539e" -> "4053a2"
+"40539e" -> "dead0def"
+"4053a2" [label = "4053a2 : RET : add esp, 0x100"]
+"4053c5" [label = "4053c5 : INST : sub esp, 0x100"]
+"4053c5" -> "4053cf"
+"4053cf" [label = "4053cf : CALL : push edx"]
+"4053cf" -> "4053da"
+"4053cf" -> "dead0def"
+"4053da" [label = "4053da : JCC : pop ecx"]
+"4053da" -> "4053e0"
+"4053da" -> "40543b"
+"4053e0" [label = "4053e0 : JCC : mov eax, esp"]
+"4053e0" -> "4053e9"
+"4053e0" -> "4053cf"
+"4053e9" [label = "4053e9 : JCC : cmp cl, 0x40"]
+"4053e9" -> "4053ee"
+"4053e9" -> "405433"
+"4053ee" [label = "4053ee : JCC : cmp cl, 0x2e"]
+"4053ee" -> "4053f3"
+"4053ee" -> "40542f"
+"4053f3" [label = "4053f3 : JCC : cmp cl, 0x30"]
+"4053f3" -> "4053f8"
+"4053f3" -> "405407"
+"4053f8" [label = "4053f8 : JCC : cmp cl, 0x39"]
+"4053f8" -> "4053fd"
+"4053f8" -> "405439"
+"4053fd" [label = "4053fd : JCC : cmp cl, 0x41"]
+"4053fd" -> "405402"
+"4053fd" -> "405407"
+"405402" [label = "405402 : JCC : cmp cl, 0x7e"]
+"405402" -> "405407"
+"405402" -> "405439"
+"405407" [label = "405407 : JCC : xor eax, eax : cl<0x2f "]
+"405407" -> "405410"
+"405407" -> "4053cf"
+"405410" [label = "405410 : JCC : cmp dl, 1 : cl<0x2f "]
+"405410" -> "405415"
+"405410" -> "4053cf"
+"405415" [label = "405415 : JCC : sub edi, esp : cl<0x2f "]
+"405415" -> "40541c"
+"405415" -> "4053cf"
+"40541c" [label = "40541c : JCC : mov al, byte ptr [esp] : cl<0x2f "]
+"40541c" -> "405423"
+"40541c" -> "4053cf"
+"405423" [label = "405423 : JCC : cmp al, 0x2e : cl<0x2f "]
+"405423" -> "405427"
+"405423" -> "4053cf"
+"405427" [label = "405427 : CALL : push esp : cl<0x2f "]
+"405427" -> "40542d"
+"405427" -> "405375"
+"40542d" [label = "40542d : JMP : jmp 0x4053cb"]
+"40542d" -> "4053cf"
+"40542f" [label = "40542f : JMP : inc dl"]
+"40542f" -> "405439"
+"405433" [label = "405433 : INST : inc dh"]
+"405433" -> "405439"
+"405439" [label = "405439 : JMP : jmp 0x4053cf"]
+"405439" -> "4053cf"
+"40543b" [label = "40543b : CALL : push ebx"]
+"40543b" -> "40543f"
+"40543b" -> "dead0def"
+"40543f" [label = "40543f : RET : add esp, 0x100"]
+"40545e" [label = "40545e : CALL : sub esp, 0x100"]
+"40545e" -> "405470"
+"40545e" -> "dead0def"
+"405470" [label = "405470 : JCC : cmp eax, 0x100"]
+"405470" -> "405477"
+"405470" -> "4054c2"
+"405477" [label = "405477 : CALL : mov eax, dword ptr [edi + 0x60]"]
+"405477" -> "405481"
+"405477" -> "dead0def"
+"405481" [label = "405481 : JCC : mov ecx, dword ptr [edi + 0x64]"]
+"405481" -> "40548c"
+"405481" -> "4054c2"
+"40548c" [label = "40548c : CALL : push ecx : ecx<0x1000 topStack=0x1000 "]
+"40548c" -> "405494"
+"40548c" -> "dead0def"
+"405494" [label = "405494 : CALL : sub esp, 0x100"]
+"405494" -> "4054b3"
+"405494" -> "dead0def"
+"4054b3" [label = "4054b3 : CALL : push esp"]
+"4054b3" -> "4054b9"
+"4054b3" -> "405375"
+"4054b9" [label = "4054b9 : JCC : add esp, 0x100"]
+"4054b9" -> "4054c2"
+"4054b9" -> "40548c"
+"4054c2" [label = "4054c2 : CALL : add esp, 0x100"]
+"4054c2" -> "4054cc"
+"4054c2" -> "dead0def"
+"4054cc" [label = "4054cc : RET : popal "]
+"4054d1" [label = "4054d1 : CALL : enter 4, 0"]
+"4054d1" -> "4054ea"
+"4054d1" -> "4056f4"
+"4054ea" [label = "4054ea : CALL : push eax"]
+"4054ea" -> "4054f2"
+"4054ea" -> "dead0def"
+"4054f2" [label = "4054f2 : CALL : sub esp, 0x1000"]
+"4054f2" -> "40551b"
+"4054f2" -> "dead0def"
+"40551b" [label = "40551b : JCC : cmp eax, -1"]
+"40551b" -> "405520"
+"40551b" -> "405568"
+"405520" [label = "405520 : CALL : mov edx, esp"]
+"405520" -> "405550"
+"405520" -> "405956"
+"405550" [label = "405550 : CALL : push eax"]
+"405550" -> "405558"
+"405550" -> "dead0def"
+"405558" [label = "405558 : CALL : mov dword ptr [esp], 0xa0d0a0d"]
+"405558" -> "405568"
+"405558" -> "dead0def"
+"405568" [label = "405568 : RET : mov esp, dword ptr [ebp - 4]"]
+"405575" [label = "405575 : CALL : enter 8, 0"]
+"405575" -> "405598"
+"405575" -> "dead0def"
+"405598" [label = "405598 : JCC : or eax, eax"]
+"405598" -> "4055a0"
+"405598" -> "4056e9"
+"4055a0" [label = "4055a0 : CALL : push 0 : topStack=0x0 "]
+"4055a0" -> "4055ac"
+"4055a0" -> "dead0def"
+"4055ac" [label = "4055ac : JCC : cmp eax, -1"]
+"4055ac" -> "4055b5"
+"4055ac" -> "4056e3"
+"4055b5" [label = "4055b5 : CALL : mov ebx, eax"]
+"4055b5" -> "4055c4"
+"4055b5" -> "dead0def"
+"4055c4" [label = "4055c4 : CALL : mov word ptr [edi + 2], ax"]
+"4055c4" -> "4055cd"
+"4055c4" -> "4055dc"
+"4055cd" [label = "4055cd : HLT : bound esi, qword ptr [ecx + 0x6d]"]
+"4055dc" [label = "4055dc : CALL : call dword ptr [esi + 0xcc]"]
+"4055dc" -> "4055e2"
+"4055dc" -> "dead0def"
+"4055e2" [label = "4055e2 : JCC : or eax, eax"]
+"4055e2" -> "4055ea"
+"4055e2" -> "4056dd"
+"4055ea" [label = "4055ea : CALL : mov eax, dword ptr [eax + 0x10]"]
+"4055ea" -> "4055fc"
+"4055ea" -> "dead0def"
+"4055fc" [label = "4055fc : JCC : cmp eax, -1"]
+"4055fc" -> "405605"
+"4055fc" -> "4056dd"
+"405605" [label = "405605 : CALL : push dword ptr [ebp + 8]"]
+"405605" -> "40560e"
+"405605" -> "4056f4"
+"40560e" [label = "40560e : CALL : push 0 : topStack=0x0 "]
+"40560e" -> "405619"
+"40560e" -> "dead0def"
+"405619" [label = "405619 : CALL : push 0xfa0 : topStack=0xfa0 "]
+"405619" -> "405621"
+"405619" -> "dead0def"
+"405621" [label = "405621 : CALL : sub esp, 0x1000"]
+"405621" -> "40564a"
+"405621" -> "dead0def"
+"40564a" [label = "40564a : JCC : cmp eax, -1"]
+"40564a" -> "405653"
+"40564a" -> "4056dd"
+"405653" [label = "405653 : CALL : sub esp, 0x1000"]
+"405653" -> "405681"
+"405653" -> "405956"
+"405681" [label = "405681 : CALL : mov edi, esp"]
+"405681" -> "40568e"
+"405681" -> "dead0def"
+"40568e" [label = "40568e : CALL : push 0xfa0 : topStack=0xfa0 "]
+"40568e" -> "405696"
+"40568e" -> "dead0def"
+"405696" [label = "405696 : CALL : call 0x4056a0"]
+"405696" -> "40569b"
+"405696" -> "4056a7"
+"40569b" [label = "40569b : INST : or eax, 0xa0d2e0a"]
+"40569b" -> "4056a7"
+"4056a7" [label = "4056a7 : CALL : call dword ptr [esi + 0xc4]"]
+"4056a7" -> "4056ad"
+"4056a7" -> "dead0def"
+"4056ad" [label = "4056ad : CALL : push 0xfa0 : topStack=0xfa0 "]
+"4056ad" -> "4056b5"
+"4056ad" -> "dead0def"
+"4056b5" [label = "4056b5 : CALL : call 0x4056c0"]
+"4056b5" -> "4056ba"
+"4056b5" -> "4056c0"
+"4056ba" [label = "4056ba : INST : push ecx"]
+"4056ba" -> "4056c3"
+"4056c0" [label = "4056c0 : INST : pop eax"]
+"4056c0" -> "4056c3"
+"4056c3" [label = "4056c3 : CALL : push 6 : topStack=0x6 "]
+"4056c3" -> "4056cd"
+"4056c3" -> "dead0def"
+"4056cd" [label = "4056cd : CALL : push 0xfa0 : topStack=0xfa0 "]
+"4056cd" -> "4056d5"
+"4056cd" -> "dead0def"
+"4056d5" [label = "4056d5 : INST : mov dword ptr [ebp - 8], 1"]
+"4056d5" -> "4056dd"
+"4056dd" [label = "4056dd : CALL : call dword ptr [esi + 0xd8]"]
+"4056dd" -> "4056e3"
+"4056dd" -> "dead0def"
+"4056e3" [label = "4056e3 : CALL : call dword ptr [esi + 0xc0]"]
+"4056e3" -> "4056e9"
+"4056e3" -> "dead0def"
+"4056e9" [label = "4056e9 : RET : mov esp, dword ptr [ebp - 4]"]
+"4056f4" [label = "4056f4 : CALL : enter 4, 0"]
+"4056f4" -> "40570b"
+"4056f4" -> "dead0def"
+"40570b" [label = "40570b : CALL : pop eax"]
+"40570b" -> "405711"
+"40570b" -> "40592e"
+"405711" [label = "405711 : JCC : dec eax"]
+"405711" -> "40573a"
+"405711" -> "40577a"
+"40573a" [label = "40573a : INST : bound esi, qword ptr [ecx + 0x6d]"]
+"40573a" -> "40577a"
+"40577a" [label = "40577a : JCC : push ebp"]
+"40577a" -> "4057aa"
+"40577a" -> "40580f"
+"4057aa" [label = "4057aa : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d "]
+"4057aa" -> "4057ad"
+"4057aa" -> "4057da"
+"4057ad" [label = "4057ad : JCC : je 0x405828 : eax<0xfffffffffff6bb1d "]
+"4057ad" -> "4057af"
+"4057ad" -> "405828"
+"4057af" [label = "4057af : JCC : jo 0x405816 : eax<0xfffffffffff6bb1d "]
+"4057af" -> "4057b1"
+"4057af" -> "405821"
+"4057b1" [label = "4057b1 : JCC : cmp ah, byte ptr [eax] : eax<0xfffffffffff6bb1d "]
+"4057b1" -> "4057b6"
+"4057b1" -> "405822"
+"4057b6" [label = "4057b6 : JCC : je 0x405821 : eax<0xfffffffffff6bb1d "]
+"4057b6" -> "4057b8"
+"4057b6" -> "405821"
+"4057b8" [label = "4057b8 : JCC : jo 0x40581b : eax<0xfffffffffff6bb1d "]
+"4057b8" -> "4057ba"
+"4057b8" -> "40581b"
+"4057ba" [label = "4057ba : JCC : jb 0x405830 : eax<0xfffffffffff6bb1d "]
+"4057ba" -> "4057bc"
+"4057ba" -> "405836"
+"4057bc" [label = "4057bc : JCC : das  : eax<0xfffffffffff6bb1d "]
+"4057bc" -> "4057c8"
+"4057bc" -> "405836"
+"4057c8" [label = "4057c8 : JCC : popal  : eax<0xfffffffffff6bb1d "]
+"4057c8" -> "4057cc"
+"4057c8" -> "405845"
+"4057cc" [label = "4057cc : INST : cmp eax, 0x4f422322 : eax<0xfffffffffff6bb1d "]
+"4057cc" -> "4057e3"
+"4057da" [label = "4057da : INST : or cl, byte ptr [0x232d2d0a] : eax<0xfffffffffff6bb1d "]
+"4057da" -> "4057e3"
+"4057e3" [label = "4057e3 : JCC : dec esi : eax<0xfffffffffff6bb1d "]
+"4057e3" -> "4057f0"
+"4057e3" -> "405855"
+"4057f0" [label = "4057f0 : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d "]
+"4057f0" -> "4057f3"
+"4057f0" -> "405820"
+"4057f3" [label = "4057f3 : JCC : push esp : eax<0xfffffffffff6bb1d "]
+"4057f3" -> "4057f6"
+"4057f3" -> "405866"
+"4057f6" [label = "4057f6 : JCC : cmp ah, byte ptr gs:[eax] : eax<0xfffffffffff6bb1d "]
+"4057f6" -> "4057fb"
+"4057f6" -> "405860"
+"4057fb" [label = "4057fb : JCC : js 0x405871 : eax<0xfffffffffff6bb1d "]
+"4057fb" -> "4057fd"
+"4057fb" -> "405873"
+"4057fd" [label = "4057fd : JCC : das  : eax<0xfffffffffff6bb1d "]
+"4057fd" -> "405809"
+"4057fd" -> "405873"
+"405809" [label = "405809 : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d topStack=0xd6c6d74 "]
+"405809" -> "40580c"
+"405809" -> "405839"
+"40580c" [label = "40580c : JCC : push esp : eax<0xfffffffffff6bb1d "]
+"40580c" -> "40580f"
+"40580c" -> "405870"
+"40580f" [label = "40580f : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d "]
+"40580f" -> "405812"
+"40580f" -> "40587d"
+"405812" [label = "405812 : JCC : jb 0x405842 : eax<0xfffffffffff6bb1d "]
+"405812" -> "405815"
+"405812" -> "405842"
+"405815" [label = "405815 : INST : inc ebp : eax<0xfffffffffff6bb1d "]
+"405815" -> "405821"
+"40581b" [label = "40581b : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d "]
+"40581b" -> "405821"
+"40581b" -> "405898"
+"405820" [label = "405820 : JCC : jne 0x405891 : eax<0xfffffffffff6bb1d "]
+"405820" -> "405822"
+"405820" -> "405891"
+"405821" [label = "405821 : INST : outsd dx, dword ptr [esi] : eax<0xfffffffffff6bb1d "]
+"405821" -> "405822"
+"405822" [label = "405822 : JCC : je 0x405889 : eax<0xfffffffffff6bb1d "]
+"405822" -> "405824"
+"405822" -> "405889"
+"405824" [label = "405824 : JCC : sub eax, 0x6e697270 : eax<0xffffffff918d48ad "]
+"405824" -> "40582c"
+"405824" -> "405898"
+"405828" [label = "405828 : INST : imul ebp, dword ptr [esi + 0x74], 0x656c6261 : eax<0xfffffffffff6bb1d "]
+"405828" -> "405839"
+"40582c" [label = "40582c : INST : bound ebp, qword ptr [ebp + 0xd] : eax<0xffffffff918d48ad "]
+"40582c" -> "405836"
+"405836" [label = "405836 : INST : insd dword ptr es:[edi], dx : eax<0xfffffffffff6bb1d "]
+"405836" -> "405842"
+"405839" [label = "405839 : INST : cmp al, 0x48 : topStack=0x3e6c6d74 "]
+"405839" -> "405842"
+"405842" [label = "405842 : INST : inc ebp : eax<0xfffffffffff6bb1d "]
+"405842" -> "405845"
+"405845" [label = "405845 : JCC : cmp al, 0x62 : eax<0xfffffffffff6bb1d "]
+"405845" -> "40584c"
+"405845" -> "40586c"
+"40584c" [label = "40584c : JCC : bound esp, qword ptr [edi + 0x43] : eax<0xfffffffffff6bb1d "]
+"40584c" -> "405854"
+"40584c" -> "405891"
+"405854" [label = "405854 : INST : xor eax, dword ptr [ebx + 0x66]"]
+"405854" -> "405860"
+"405855" [label = "405855 : INST : inc esp : eax<0xfffffffffff6bb1d "]
+"405855" -> "405860"
+"405860" [label = "405860 : JCC : jb 0x4058c4 : eax<0xfffffffffff6bb1d "]
+"405860" -> "405863"
+"405860" -> "4058c4"
+"405863" [label = "405863 : INST : insd dword ptr es:[edi], dx : eax<0xfffffffffff6bb1d "]
+"405863" -> "405868"
+"405866" [label = "405866 : JCC : jae 0x4058da : eax<0xfffffffffff6bb1d "]
+"405866" -> "405868"
+"405866" -> "4058da"
+"405868" [label = "405868 : INST : arpl word ptr [0x69634433], di : eax<0xfffffffffff6bb1d "]
+"405868" -> "405873"
+"40586c" [label = "40586c : INST : arpl word ptr [ecx + 0x64], bp : eax<0xfffffffffff6bb1d "]
+"40586c" -> "405873"
+"405870" [label = "405870 : INST : push esp : eax<0xfffffffffff6bb1d "]
+"405870" -> "405873"
+"405873" [label = "405873 : INST : sub eax, 0x20444943 : eax<0xffffffffdfb271da "]
+"405873" -> "40587d"
+"40587d" [label = "40587d : JCC : je 0x4058bc : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"40587d" -> "40587f"
+"40587d" -> "4058bc"
+"40587f" [label = "40587f : JCC : xor eax, dword ptr [eax + esi + 0x20] : topStack=0x68676965 "]
+"40587f" -> "405885"
+"40587f" -> "4058ee"
+"405885" [label = "405885 : JCC : je 0x4058f0 : topStack=0x68676965 "]
+"405885" -> "405888"
+"405885" -> "4058f0"
+"405888" [label = "405888 : INST : cmp eax, 0x3e304433 : topStack=0x68676965 "]
+"405888" -> "405898"
+"405889" [label = "405889 : INST : xor eax, dword ptr [eax + esi + 0x3e]"]
+"405889" -> "405898"
+"405891" [label = "405891 : JCC : jb 0x4058f4 : eax<0xfffffffffff6bb1d "]
+"405891" -> "405893"
+"405891" -> "4058f4"
+"405893" [label = "405893 : INST : insd dword ptr es:[edi], dx : eax<0xfffffffffff6bb1d "]
+"405893" -> "405898"
+"405898" [label = "405898 : JCC : bound ebp, qword ptr [edi + 0x64] : topStack=0x68676965 "]
+"405898" -> "40589d"
+"405898" -> "4058db"
+"40589d" [label = "40589d : INST : cmp al, 0x2f : topStack=0x68676965 "]
+"40589d" -> "4058bf"
+"4058bc" [label = "4058bc : JCC : jb 0x405932 : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"4058bc" -> "4058bf"
+"4058bc" -> "405935"
+"4058bf" [label = "4058bf : INST : imul ebp, dword ptr [edi + 0x6e], 0x2e31203a : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"4058bf" -> "4058cc"
+"4058c4" [label = "4058c4 : INST : xor dword ptr [esi], ebp : eax<0xfffffffffff6bb1d al<0x68 "]
+"4058c4" -> "4058cc"
+"4058cc" [label = "4058cc : JCC : je 0x405933 : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"4058cc" -> "4058ce"
+"4058cc" -> "405933"
+"4058ce" [label = "4058ce : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"4058ce" -> "4058d1"
+"4058ce" -> "4058fe"
+"4058d1" [label = "4058d1 : JCC : push esp : eax<0xfffffffffff6bb1d "]
+"4058d1" -> "4058d4"
+"4058d1" -> "405944"
+"4058d4" [label = "4058d4 : JCC : cmp ah, byte ptr gs:[eax] : eax<0xfffffffffff6bb1d "]
+"4058d4" -> "4058da"
+"4058d4" -> "40593e"
+"4058da" [label = "4058da : INST : imul ebp, dword ptr [edi + 0x2f], 0x61772d78 : eax<0xfffffffffff6bb1d "]
+"4058da" -> "4058e1"
+"4058db" [label = "4058db : JCC : outsd dx, dword ptr [esi] : topStack=0x68676965 "]
+"4058db" -> "4058df"
+"4058db" -> "40590c"
+"4058df" [label = "4058df : JCC : ja 0x405942 : topStack=0x68676965 "]
+"4058df" -> "4058e1"
+"4058df" -> "405942"
+"4058e1" [label = "4058e1 : JCC : jbe 0x40591e : eax<0xfffffffffff6bb1d "]
+"4058e1" -> "4058e3"
+"4058e1" -> "40591e"
+"4058e3" [label = "4058e3 : JCC : and byte ptr [esi + 0x61], ch : eax<0xfffffffffff6bb1d "]
+"4058e3" -> "4058f0"
+"4058e3" -> "405955"
+"4058ee" [label = "4058ee : JCC : js 0x405955 : topStack=0x68676965 "]
+"4058ee" -> "4058f0"
+"4058ee" -> "405955"
+"4058f0" [label = "4058f0 : INST : and cl, byte ptr [0x6e6f430a] : topStack=0x68676965 "]
+"4058f0" -> "4058f6"
+"4058f4" [label = "4058f4 : INST : outsd dx, dword ptr [esi] : eax<0xfffffffffff6bb1d "]
+"4058f4" -> "4058f6"
+"4058f6" [label = "4058f6 : JCC : je 0x40595d : topStack=0x68676965 "]
+"4058f6" -> "4058f8"
+"4058f6" -> "40595d"
+"4058f8" [label = "4058f8 : JCC : outsb dx, byte ptr [esi] : topStack=0x68676965 "]
+"4058f8" -> "4058fb"
+"4058f8" -> "405928"
+"4058fb" [label = "4058fb : JCC : push esp"]
+"4058fb" -> "4058fe"
+"4058fb" -> "40595f"
+"4058fe" [label = "4058fe : JCC : outsb dx, byte ptr [esi] : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"4058fe" -> "405901"
+"4058fe" -> "405967"
+"405901" [label = "405901 : JCC : jb 0x405931 : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"405901" -> "405904"
+"405901" -> "405931"
+"405904" [label = "405904 : JCC : inc ebp : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"405904" -> "405912"
+"405904" -> "405977"
+"40590c" [label = "40590c : INST : cmp ah, byte ptr [eax] : topStack=0x68676965 "]
+"40590c" -> "405919"
+"405912" [label = "405912 : INST : xor al, 0xd : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"405912" -> "405919"
+"405919" [label = "405919 : JCC : je 0x405980 : topStack=0x68676965 topStack=0x68676965 "]
+"405919" -> "40591b"
+"405919" -> "405980"
+"40591b" [label = "40591b : JCC : outsb dx, byte ptr [esi] : topStack=0x68676965 topStack=0x68676965 "]
+"40591b" -> "40591e"
+"40591b" -> "40594b"
+"40591e" [label = "40591e : INST : imul esp, dword ptr [edx + edi + 0x20], 0x2d454854 : eax<0xfffffffffff6bb1d "]
+"40591e" -> "405928"
+"405928" [label = "405928 : INST : inc esp : topStack=0x68676965 "]
+"405928" -> "40592e"
+"40592e" [label = "40592e : INST : pop eax"]
+"40592e" -> "405931"
+"405931" [label = "405931 : INST : push edi"]
+"405931" -> "405935"
+"405933" [label = "405933 : JCC : jne 0x405941 : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"405933" -> "405935"
+"405933" -> "405941"
+"405935" [label = "405935 : CALL : push edi"]
+"405935" -> "405952"
+"405935" -> "dead0def"
+"40593e" [label = "40593e : INST : xchg eax, esi"]
+"40593e" -> "405942"
+"405941" [label = "405941 : INST : add byte ptr [eax], al : eax<0xfffffffffff6bb1d topStack=0x68676965 "]
+"405941" -> "405952"
+"405942" [label = "405942 : INST : add byte ptr [ebx - 0x3ba7619], cl : topStack=0x68676965 "]
+"405942" -> "405952"
+"405944" [label = "405944 : INST : out 0x89, eax"]
+"405944" -> "405952"
+"40594b" [label = "40594b : INST : add dword ptr [eax], eax : topStack=0x68676965 topStack=0x68676965 "]
+"40594b" -> "405952"
+"405952" [label = "405952 : RET : leave "]
+"405955" [label = "405955 : INST : add al, cl : topStack=0x68676965 "]
+"405955" -> "40595d"
+"405956" [label = "405956 : INST : enter 4, 0"]
+"405956" -> "405962"
+"40595d" [label = "40595d : INST : cld  : topStack=0x68676965 "]
+"40595d" -> "405962"
+"40595f" [label = "40595f : INST : add byte ptr [eax], al"]
+"40595f" -> "405969"
+"405962" [label = "405962 : CALL : call 0x4059a8"]
+"405962" -> "405967"
+"405962" -> "4059a8"
+"405967" [label = "405967 : INST : inc ecx"]
+"405967" -> "405969"
+"405969" [label = "405969 : INST : inc ebx"]
+"405969" -> "405977"
+"405977" [label = "405977 : INST : push ecx"]
+"405977" -> "405980"
+"405980" [label = "405980 : JCC : pop edx"]
+"405980" -> "405992"
+"405980" -> "405a03"
+"405992" [label = "405992 : JCC : jb 0x405a07 : topStack=0x6a69 "]
+"405992" -> "405994"
+"405992" -> "405a07"
+"405994" [label = "405994 : JCC : je 0x405a0b : topStack=0x6a69 "]
+"405994" -> "405996"
+"405994" -> "405a0b"
+"405996" [label = "405996 : JCC : jbe 0x405a0f : topStack=0x6a69 "]
+"405996" -> "405998"
+"405996" -> "405a0f"
+"405998" [label = "405998 : JCC : js 0x405a13 : topStack=0x6a69 "]
+"405998" -> "40599a"
+"405998" -> "405a13"
+"40599a" [label = "40599a : JCC : jp 0x4059cc : topStack=0x6a69 "]
+"40599a" -> "40599c"
+"40599a" -> "4059cc"
+"40599c" [label = "40599c : JCC : xor dword ptr [edx], esi : topStack=0x6a69 "]
+"40599c" -> "4059ac"
+"40599c" -> "4059bc"
+"4059a8" [label = "4059a8 : INST : pop esi"]
+"4059a8" -> "4059ac"
+"4059ac" [label = "4059ac : INST : mov edx, dword ptr [ebp + 0xc]"]
+"4059ac" -> "4059b4"
+"4059b4" [label = "4059b4 : INST : xor eax, eax"]
+"4059b4" -> "4059bb"
+"4059bb" [label = "4059bb : INST : shl eax, 1 : ecx=0x6 "]
+"4059bb" -> "4059be"
+"4059bc" [label = "4059bc : JCC : loopne 0x405a11 : topStack=0x6a69 "]
+"4059bc" -> "4059be"
+"4059bc" -> "405a11"
+"4059be" [label = "4059be : CALL : push dword ptr [ebp + 8] : ecx=0x6 "]
+"4059be" -> "4059c6"
+"4059be" -> "4059f6"
+"4059c6" [label = "4059c6 : JCC : dec edx"]
+"4059c6" -> "4059c9"
+"4059c6" -> "4059d6"
+"4059c9" [label = "4059c9 : JCC : inc ebx"]
+"4059c9" -> "4059cc"
+"4059c9" -> "4059bb"
+"4059cc" [label = "4059cc : JMP : mov al, byte ptr [esi + eax]"]
+"4059cc" -> "4059b4"
+"4059d6" [label = "4059d6 : RET : dec ecx"]
+"4059f6" [label = "4059f6 : INST : enter 0, 0"]
+"4059f6" -> "405a03"
+"405a03" [label = "405a03 : INST : mov edx, ecx"]
+"405a03" -> "405a0b"
+"405a07" [label = "405a07 : INST : add ecx, dword ptr [edx - 0x2e09e9ec] : topStack=0x6a69 "]
+"405a07" -> "405a1b"
+"405a0b" [label = "405a0b : INST : not cl"]
+"405a0b" -> "405a1b"
+"405a0f" [label = "405a0f : INST : pop es : es=0x6a69 "]
+"405a0f" -> "405a1b"
+"405a11" [label = "405a11 : JMP : ljmp 0x5ec2:0xa01e280 : topStack=0x6a69 "]
+"405a11" -> "dead0def"
+"405a13" [label = "405a13 : JCC : loop 0x405a16 : topStack=0x6a69 "]
+"405a13" -> "405a1b"
+"405a13" -> "405a16"
+"405a16" [label = "405a16 : UNDEF : ret 0x5a5e"]
+"405a1b" [label = "405a1b : RET : ret 8"]
+"405a1e" [label = "405a1e : CALL : pop eax"]
+"405a1e" -> "405a25"
+"405a1e" -> "405a28"
+"405a25" [label = "405a25 : CALL : jmp 0x405a61"]
+"405a25" -> "405a6a"
+"405a25" -> "405a72"
+"405a28" [label = "405a28 : CALL : push dword ptr fs:[0]"]
+"405a28" -> "405a39"
+"405a28" -> "405a55"
+"405a39" [label = "405a39 : JMP : push dword ptr [edx]"]
+"405a39" -> "dead0def"
+"405a40" [label = "405a40 : CALL : pop eax"]
+"405a40" -> "405a46"
+"405a40" -> "405a55"
+"405a46" [label = "405a46 : JMP : mov esp, dword ptr [edx]"]
+"405a46" -> "dead0def"
+"405a55" [label = "405a55 : CALL : call 0x405a5e"]
+"405a55" -> "405a5a"
+"405a55" -> "405a5e"
+"405a5a" [label = "405a5a : INST : mov dh, bh"]
+"405a5a" -> "405a5e"
+"405a5e" [label = "405a5e : RET : pop edx"]
+"405a6a" [label = "405a6a : CALL : call 0x405a40"]
+"405a6a" -> "405a6f"
+"405a6a" -> "405a40"
+"405a6f" [label = "405a6f : JMP : jmp ecx"]
+"405a6f" -> "dead0def"
+"405a72" [label = "405a72 : RET : pop ecx"]
+"405a82" [label = "405a82 : CALL : call 0x405bee"]
+"405a82" -> "405a87"
+"405a82" -> "405bee"
+"405a87" [label = "405a87 : INVALID : dec ebp"]
+"405bee" [label = "405bee : INST : pop edi"]
+"405bee" -> "405bf4"
+"405bf4" [label = "405bf4 : JCC : je 0x405c03"]
+"405bf4" -> "405bf6"
+"405bf4" -> "405c03"
+"405bf6" [label = "405bf6 : CALL : push eax"]
+"405bf6" -> "405c00"
+"405bf6" -> "dead0def"
+"405c00" [label = "405c00 : JMP : pop eax"]
+"405c00" -> "405bf4"
+"405c03" [label = "405c03 : JCC : movzx ecx, byte ptr [edi]"]
+"405c03" -> "405c09"
+"405c03" -> "405c1a"
+"405c09" [label = "405c09 : CALL : push ecx"]
+"405c09" -> "405c14"
+"405c09" -> "dead0def"
+"405c14" [label = "405c14 : JCC : pop eax"]
+"405c14" -> "405c18"
+"405c14" -> "405c09"
+"405c18" [label = "405c18 : JMP : jmp 0x405bef"]
+"405c18" -> "405bf4"
+"405c1a" [label = "405c1a : RET : ret "]
+"405cdf" [label = "405cdf : CALL : sub esp, 0x100"]
+"405cdf" -> "405cec"
+"405cdf" -> "405cf4"
+"405cec" [label = "405cec : JCC : push edx"]
+"405cec" -> "405cef"
+"405cec" -> "405d5d"
+"405cef" [label = "405cef : INST : outsd dx, dword ptr [esi]"]
+"405cef" -> "405cf4"
+"405cf4" [label = "405cf4 : CALL : pop esi"]
+"405cf4" -> "405cff"
+"405cf4" -> "405d0c"
+"405cff" [label = "405cff : INST : cmp dword ptr [eax - 0x23], 0x77"]
+"405cff" -> "405d0c"
+"405d0c" [label = "405d0c : CALL : call dword ptr [eax]"]
+"405d0c" -> "405d0e"
+"405d0c" -> "dead0def"
+"405d0e" [label = "405d0e : INST : pop eax"]
+"405d0e" -> "405d0f"
+"405d0f" [label = "405d0f : CALL : call 0x405d18"]
+"405d0f" -> "405d14"
+"405d0f" -> "405d18"
+"405d14" [label = "405d14 : JCC : fstpnce st(5), st(0)"]
+"405d14" -> "405d22"
+"405d14" -> "405d71"
+"405d18" [label = "405d18 : INST : pop eax"]
+"405d18" -> "405d22"
+"405d22" [label = "405d22 : CALL : call dword ptr [eax]"]
+"405d22" -> "405d24"
+"405d22" -> "dead0def"
+"405d24" [label = "405d24 : CALL : call 0x405d2d"]
+"405d24" -> "405d29"
+"405d24" -> "405d2d"
+"405d29" [label = "405d29 : INST : out 0xeb, eax"]
+"405d29" -> "405d3a"
+"405d2d" [label = "405d2d : INST : pop eax"]
+"405d2d" -> "405d3a"
+"405d3a" [label = "405d3a : CALL : call dword ptr [eax]"]
+"405d3a" -> "405d3c"
+"405d3a" -> "dead0def"
+"405d3c" [label = "405d3c : JMP : jmp 0x405d0f"]
+"405d3c" -> "405d0f"
+"405d5d" [label = "405d5d : CALL : mov ebx, eax"]
+"405d5d" -> "405d64"
+"405d5d" -> "405d68"
+"405d64" [label = "405d64 : CALL : xor byte ptr [0x6a587c80], ah"]
+"405d64" -> "405d6d"
+"405d64" -> "dead0def"
+"405d68" [label = "405d68 : CALL : pop eax"]
+"405d68" -> "405d6e"
+"405d68" -> "dead0def"
+"405d6d" [label = "405d6d : INST : adc al, ch"]
+"405d6d" -> "405d71"
+"405d6e" [label = "405d6e : CALL : call 0x405d73"]
+"405d6e" -> "405d7a"
+"405d6e" -> "405d7a"
+"405d71" [label = "405d71 : INST : add byte ptr [eax], al"]
+"405d71" -> "405d7a"
+"405d7a" [label = "405d7a : CALL : call 0x405d83"]
+"405d7a" -> "405d7f"
+"405d7a" -> "405d83"
+"405d7f" [label = "405d7f : INST : dec ebp"]
+"405d7f" -> "405d86"
+"405d83" [label = "405d83 : INST : pop eax"]
+"405d83" -> "405d86"
+"405d86" [label = "405d86 : CALL : push ecx"]
+"405d86" -> "405d89"
+"405d86" -> "dead0def"
+"405d89" [label = "405d89 : RET : leave "]
+"405d8e" [label = "405d8e : CALL : enter 0, 0"]
+"405d8e" -> "405da7"
+"405d8e" -> "405db2"
+"405da7" [label = "405da7 : RET : pushal "]
+"405db2" [label = "405db2 : HLT : cli "]
+"405dfc" [label = "405dfc : CALL : cld "]
+"405dfc" -> "405e02"
+"405dfc" -> "405e2a"
+"405e02" [label = "405e02 : INST : push ebx"]
+"405e02" -> "405e0a"
+"405e0a" [label = "405e0a : JCC : xor word ptr [eax], dx : ecx=0xda5 "]
+"405e0a" -> "405e17"
+"405e0a" -> "405e0a"
+"405e17" [label = "405e17 : RET : pop ebx : ecx=0xda5 "]
+"405e1b" [label = "405e1b : RET : pop ebp : eax=0x7f00 "]
+"405e1d" [label = "405e1d : JMP : push ebp"]
+"405e1d" -> "405e51"
+"405e27" [label = "405e27 : RET : rdtsc "]
+"405e2a" [label = "405e2a : JCC : test eax, eax"]
+"405e2a" -> "405e2e"
+"405e2a" -> "405e36"
+"405e2e" [label = "405e2e : HLT : int 0x2c"]
+"405e36" [label = "405e36 : JCC : push eax"]
+"405e36" -> "405e45"
+"405e36" -> "405e1d"
+"405e45" [label = "405e45 : CALL : push ebp"]
+"405e45" -> "405e4b"
+"405e45" -> "405e27"
+"405e4b" [label = "405e4b : CALL : xchg eax, ecx"]
+"405e4b" -> "405e51"
+"405e4b" -> "405e27"
+"405e51" [label = "405e51 : JCC : sub eax, ecx : eax=0x8000 "]
+"405e51" -> "405e66"
+"405e51" -> "405e1b"
+"405e66" [label = "405e66 : CALL : sub ebp, 0x301006 : eax-0x100 "]
+"405e66" -> "405e7e"
+"405e66" -> "405e02"
+"405e7e" [label = "405e7e : JCC : cmp edx, ebp"]
+"405e7e" -> "405e83"
+"405e7e" -> "405e2e"
+"405e83" [label = "405e83 : INVALID : scasd eax, dword ptr es:[edi]"]
+"4061eb" [label = "4061eb : RET : retf 0x4d50"]
+"406229" [label = "406229 : JCC : push ebp"]
+"406229" -> "40622c"
+"406229" -> "4061eb"
+"40622c" [label = "40622c : RET : xchg ebx, ecx"]
+"4067dc" [label = "4067dc : RET : les esp, ptr [edx - 0x743087b0]"]
+"406842" [label = "406842 : JCC : push ebp"]
+"406842" -> "406845"
+"406842" -> "4067dc"
+"406845" [label = "406845 : INST : mov ecx, dword ptr [ebp + 0x51fdf72b]"]
+"406845" -> "406852"
+"406852" [label = "406852 : JCC : dec eax"]
+"406852" -> "406879"
+"406852" -> "406852"
+"406879" [label = "406879 : INST : xchg eax, esi : al<0x5f ebp=0x3ef0db5f "]
+"406879" -> "40687a"
+"40687a" [label = "40687a : JCC : jl 0x40687a : al<0x5f ebp=0x3ef0db5f "]
+"40687a" -> "40687c"
+"40687a" -> "40687a"
+"40687c" [label = "40687c : RET : pop edx : al<0x5f ebp=0x3ef0db5f "]
+"dead0def" [label = "dead0def : UNDEF"]
+}

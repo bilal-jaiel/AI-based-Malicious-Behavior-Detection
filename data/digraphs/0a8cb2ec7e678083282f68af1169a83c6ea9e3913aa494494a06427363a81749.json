@@ -1,0 +1,369 @@
+Digraph G {
+"4330f7" [label = "4330f7 : JCC : push ebp"]
+"4330f7" -> "433111"
+"4330f7" -> "433183"
+"433111" [label = "433111 : INST : imul ebp, dword ptr [esi + 0x74], 0x57004166"]
+"433111" -> "433128"
+"433122" [label = "433122 : CALL : pushal "]
+"433122" -> "433128"
+"433122" -> "433128"
+"433128" [label = "433128 : INST : pop eax"]
+"433128" -> "433147"
+"433147" [label = "433147 : JCC : dec ecx"]
+"433147" -> "433151"
+"433147" -> "433147"
+"433151" [label = "433151 : INST : sub eax, eax"]
+"433151" -> "433183"
+"433183" [label = "433183 : CALL : shl edx, 0xc : ch=0xf "]
+"433183" -> "433197"
+"433183" -> "4331f5"
+"433197" [label = "433197 : INST : mov esp, ebx"]
+"433197" -> "4331a6"
+"4331a6" [label = "4331a6 : JCC : cmp ecx, edx : ah=0x10 "]
+"4331a6" -> "4331aa"
+"4331a6" -> "4331d0"
+"4331aa" [label = "4331aa : JCC : mov ebx, ecx : ah=0x10 "]
+"4331aa" -> "4331b4"
+"4331aa" -> "4331a6"
+"4331b4" [label = "4331b4 : JCC : inc ebx : ah=0x10 al<0xfe "]
+"4331b4" -> "4331bd"
+"4331b4" -> "4331c3"
+"4331bd" [label = "4331bd : JCC : cmp eax, edx : ah=0x10 al<0xfe "]
+"4331bd" -> "4331c1"
+"4331bd" -> "4331a6"
+"4331c1" [label = "4331c1 : JMP : jmp 0x4331c9 : ah=0x10 al<0xfe "]
+"4331c1" -> "4331ce"
+"4331c3" [label = "4331c3 : JCC : add eax, ebx : ah=0x10 al<0xfe "]
+"4331c3" -> "4331c7"
+"4331c3" -> "4331a6"
+"4331c7" [label = "4331c7 : INST : add eax, edx : ah=0x10 al<0xfe "]
+"4331c7" -> "4331ce"
+"4331ce" [label = "4331ce : JMP : jmp 0x4331a6 : ah=0x10 al<0xfe "]
+"4331ce" -> "4331a6"
+"4331d0" [label = "4331d0 : CALL : call 0x4331d5"]
+"4331d0" -> "4331d5"
+"4331d0" -> "4331d5"
+"4331d5" [label = "4331d5 : CALL : pop edi"]
+"4331d5" -> "4331ea"
+"4331d5" -> "4331ea"
+"4331ea" [label = "4331ea : UNDEF : pop eax"]
+"4331f5" [label = "4331f5 : JCC : push ebp"]
+"4331f5" -> "433299"
+"4331f5" -> "4332a7"
+"433299" [label = "433299 : INST : mov eax, dword ptr [esp + 0x78]"]
+"433299" -> "4332a5"
+"4332a5" [label = "4332a5 : JCC : loop 0x43329d"]
+"4332a5" -> "4332a7"
+"4332a5" -> "4332a5"
+"4332a7" [label = "4332a7 : INST : mov ebx, dword ptr [esp + 0x94]"]
+"4332a7" -> "4332c7"
+"4332c7" [label = "4332c7 : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"4332c7" -> "4332d1"
+"4332c7" -> "433c4e"
+"4332d1" [label = "4332d1 : JCC : movzx eax, byte ptr [ebx]"]
+"4332d1" -> "4332e0"
+"4332d1" -> "4332c7"
+"4332e0" [label = "4332e0 : JCC : mov ecx, dword ptr [esp + 0xa4]"]
+"4332e0" -> "4332f1"
+"4332e0" -> "433c75"
+"4332f1" [label = "4332f1 : JCC : mov esi, dword ptr [esp + 0x74]"]
+"4332f1" -> "433317"
+"4332f1" -> "43332f"
+"433317" [label = "433317 : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"433317" -> "433321"
+"433317" -> "433c4e"
+"433321" [label = "433321 : INST : shl dword ptr [esp + 0x48], 8"]
+"433321" -> "43332f"
+"43332f" [label = "43332f : JCC : mov eax, dword ptr [esp + 0x48]"]
+"43332f" -> "433348"
+"43332f" -> "433525"
+"433348" [label = "433348 : JCC : mov dword ptr [esp + 0x48], eax"]
+"433348" -> "4333a2"
+"433348" -> "43346c"
+"4333a2" [label = "4333a2 : INST : mov eax, dword ptr [esp + 0x74] : esi=0x1 ecx=0x8 "]
+"4333a2" -> "4333b9"
+"4333b9" [label = "4333b9 : JCC : shl dword ptr [esp + 0x40], 1 : esi=0x1 ecx=0x8 "]
+"4333b9" -> "4333e3"
+"4333b9" -> "4333fb"
+"4333e3" [label = "4333e3 : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi=0x1 ecx<0x100 "]
+"4333e3" -> "4333ed"
+"4333e3" -> "433c4e"
+"4333ed" [label = "4333ed : INST : shl dword ptr [esp + 0x48], 8 : esi=0x1 ecx<0x100 "]
+"4333ed" -> "4333fb"
+"4333fb" [label = "4333fb : JCC : mov eax, dword ptr [esp + 0x48] : esi=0x1 ecx<0x100 "]
+"4333fb" -> "433413"
+"4333fb" -> "433436"
+"433413" [label = "433413 : JCC : mov dword ptr [esp + 0x48], eax : ecx<0x100 "]
+"433413" -> "433434"
+"433413" -> "433456"
+"433434" [label = "433434 : JMP : jmp 0x433464 : ecx<0x100 "]
+"433434" -> "433464"
+"433436" [label = "433436 : JCC : sub dword ptr [esp + 0x48], eax : ecx<0x100 "]
+"433436" -> "433456"
+"433436" -> "433464"
+"433456" [label = "433456 : JCC : cmp esi, 0xff : ecx<0x100 eax=0x100 "]
+"433456" -> "433462"
+"433456" -> "4333b9"
+"433462" [label = "433462 : JMP : jmp 0x4334dd : ecx<0x100 eax=0x100 "]
+"433462" -> "4334dd"
+"433464" [label = "433464 : JCC : cmp esi, 0xff : ecx=0x8 eax=0x8 "]
+"433464" -> "43346c"
+"433464" -> "4334dd"
+"43346c" [label = "43346c : JCC : lea edx, [esi + esi] : esi=0x1 ecx=0x8 "]
+"43346c" -> "43347f"
+"43346c" -> "433497"
+"43347f" [label = "43347f : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi=0x1 ecx=0x8 "]
+"43347f" -> "433489"
+"43347f" -> "433c4e"
+"433489" [label = "433489 : INST : shl dword ptr [esp + 0x48], 8 : esi=0x1 ecx=0x8 "]
+"433489" -> "433497"
+"433497" [label = "433497 : JCC : mov eax, dword ptr [esp + 0x48] : esi=0x1 ecx=0x8 "]
+"433497" -> "4334ac"
+"433497" -> "4334c5"
+"4334ac" [label = "4334ac : JMP : mov dword ptr [esp + 0x48], eax : ecx=0x8 "]
+"4334ac" -> "433464"
+"4334c5" [label = "4334c5 : JMP : sub dword ptr [esp + 0x48], eax : ecx=0x8 "]
+"4334c5" -> "433464"
+"4334dd" [label = "4334dd : JCC : mov edx, dword ptr [esp + 0x74] : ecx=0x8 eax=0x8 "]
+"4334dd" -> "4334fd"
+"4334dd" -> "43350a"
+"4334fd" [label = "4334fd : JMP : mov dword ptr [esp + 0x60], 0"]
+"4334fd" -> "433c26"
+"43350a" [label = "43350a : JCC : cmp dword ptr [esp + 0x60], 9"]
+"43350a" -> "433511"
+"43350a" -> "43351b"
+"433511" [label = "433511 : JMP : sub dword ptr [esp + 0x60], 3"]
+"433511" -> "433c26"
+"43351b" [label = "43351b : JMP : sub dword ptr [esp + 0x60], 6"]
+"43351b" -> "433c26"
+"433525" [label = "433525 : JCC : mov ecx, dword ptr [esp + 0x48]"]
+"433525" -> "433552"
+"433525" -> "433568"
+"433552" [label = "433552 : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"433552" -> "43355c"
+"433552" -> "433c4e"
+"43355c" [label = "43355c : INST : movzx eax, byte ptr [ebx]"]
+"43355c" -> "433568"
+"433568" [label = "433568 : JCC : mov ebp, dword ptr [esp + 0x38]"]
+"433568" -> "433582"
+"433568" -> "4335d4"
+"433582" [label = "433582 : JMP : mov esi, eax"]
+"433582" -> "433848"
+"4335d4" [label = "4335d4 : JCC : mov esi, ecx"]
+"4335d4" -> "4335f6"
+"4335d4" -> "43360c"
+"4335f6" [label = "4335f6 : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi<0xffffff "]
+"4335f6" -> "433600"
+"4335f6" -> "433c4e"
+"433600" [label = "433600 : INST : movzx eax, byte ptr [ebx] : esi<0xffffff "]
+"433600" -> "43360c"
+"43360c" [label = "43360c : JCC : mov ebp, dword ptr [esp + 0x38]"]
+"43360c" -> "43362a"
+"43360c" -> "43370d"
+"43362a" [label = "43362a : JCC : mov ebp, 0x800 : ebp=0x800 "]
+"43362a" -> "433668"
+"43362a" -> "43367e"
+"433668" [label = "433668 : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"433668" -> "433672"
+"433668" -> "433c4e"
+"433672" [label = "433672 : INST : movzx eax, byte ptr [ebx]"]
+"433672" -> "43367e"
+"43367e" [label = "43367e : JCC : mov dx, word ptr [ebp + 0x1e0]"]
+"43367e" -> "433694"
+"43367e" -> "4336f4"
+"433694" [label = "433694 : JCC : sub dword ptr [esp + 0x34], ecx"]
+"433694" -> "4336ba"
+"433694" -> "433c4e"
+"4336ba" [label = "4336ba : JMP : xor eax, eax"]
+"4336ba" -> "433c26"
+"4336f4" [label = "4336f4 : JMP : sub esi, eax"]
+"4336f4" -> "43382c"
+"43370d" [label = "43370d : JCC : mov eax, ecx"]
+"43370d" -> "43372d"
+"43370d" -> "433743"
+"43372d" [label = "43372d : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi<0xffffff "]
+"43372d" -> "433737"
+"43372d" -> "433c4e"
+"433737" [label = "433737 : INST : movzx eax, byte ptr [ebx] : esi<0xffffff "]
+"433737" -> "433743"
+"433743" [label = "433743 : JCC : mov ecx, dword ptr [esp + 0x38]"]
+"433743" -> "43375d"
+"433743" -> "433780"
+"43375d" [label = "43375d : JMP : mov esi, eax"]
+"43375d" -> "433820"
+"433780" [label = "433780 : JCC : mov ecx, esi"]
+"433780" -> "4337a2"
+"433780" -> "4337b8"
+"4337a2" [label = "4337a2 : JCC : cmp ebx, dword ptr [esp + 0x4c] : ecx<0xffffff "]
+"4337a2" -> "4337ac"
+"4337a2" -> "433c4e"
+"4337ac" [label = "4337ac : INST : movzx eax, byte ptr [ebx] : ecx<0xffffff "]
+"4337ac" -> "4337b8"
+"4337b8" [label = "4337b8 : JCC : mov esi, dword ptr [esp + 0x38]"]
+"4337b8" -> "4337d2"
+"4337b8" -> "4337f2"
+"4337d2" [label = "4337d2 : JMP : mov esi, eax"]
+"4337d2" -> "433818"
+"4337f2" [label = "4337f2 : INST : mov esi, ecx"]
+"4337f2" -> "433818"
+"433818" [label = "433818 : INST : mov ecx, dword ptr [esp + 0x58]"]
+"433818" -> "433820"
+"433820" [label = "433820 : INST : mov ebp, dword ptr [esp + 0x5c]"]
+"433820" -> "43382c"
+"43382c" [label = "43382c : INST : xor eax, eax"]
+"43382c" -> "433848"
+"433848" [label = "433848 : JCC : cmp esi, 0xffffff"]
+"433848" -> "433850"
+"433848" -> "433866"
+"433850" [label = "433850 : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi<0xffffff "]
+"433850" -> "43385a"
+"433850" -> "433c4e"
+"43385a" [label = "43385a : INST : movzx eax, byte ptr [ebx] : esi<0xffffff "]
+"43385a" -> "433866"
+"433866" [label = "433866 : JCC : mov dx, word ptr [ecx]"]
+"433866" -> "433878"
+"433866" -> "4338a7"
+"433878" [label = "433878 : JMP : mov dword ptr [esp + 0x48], eax"]
+"433878" -> "433919"
+"4338a7" [label = "4338a7 : JCC : sub esi, eax"]
+"4338a7" -> "4338bf"
+"4338a7" -> "4338d5"
+"4338bf" [label = "4338bf : JCC : cmp ebx, dword ptr [esp + 0x4c] : esi<0xffffff "]
+"4338bf" -> "4338c9"
+"4338bf" -> "433c4e"
+"4338c9" [label = "4338c9 : INST : movzx eax, byte ptr [ebx] : esi<0xffffff "]
+"4338c9" -> "4338d5"
+"4338d5" [label = "4338d5 : JCC : mov dx, word ptr [ecx + 2]"]
+"4338d5" -> "4338e8"
+"4338d5" -> "433923"
+"4338e8" [label = "4338e8 : INST : mov dword ptr [esp + 0x48], eax"]
+"4338e8" -> "433919"
+"433919" [label = "433919 : JMP : mov dword ptr [esp + 0x30], 3"]
+"433919" -> "433952"
+"433923" [label = "433923 : INST : sub esi, eax"]
+"433923" -> "433952"
+"433952" [label = "433952 : INST : mov ecx, dword ptr [esp + 0x30]"]
+"433952" -> "43395f"
+"43395f" [label = "43395f : JCC : lea ebp, [edx + edx] : edx=0x1 "]
+"43395f" -> "433972"
+"43395f" -> "43398a"
+"433972" [label = "433972 : JCC : cmp ebx, dword ptr [esp + 0x4c] : edx=0x1 "]
+"433972" -> "43397c"
+"433972" -> "433c4e"
+"43397c" [label = "43397c : INST : shl dword ptr [esp + 0x48], 8 : edx=0x1 "]
+"43397c" -> "43398a"
+"43398a" [label = "43398a : JCC : mov eax, dword ptr [esp + 0x48] : edx=0x1 "]
+"43398a" -> "43399e"
+"43398a" -> "4339b6"
+"43399e" [label = "43399e : JMP : mov dword ptr [esp + 0x48], eax : edx=0x1 "]
+"43399e" -> "4339cb"
+"4339b6" [label = "4339b6 : INST : sub dword ptr [esp + 0x48], eax : edx=0x1 "]
+"4339b6" -> "4339cb"
+"4339cb" [label = "4339cb : JCC : mov esi, dword ptr [esp + 0x28] : eax=0x1 "]
+"4339cb" -> "4339d6"
+"4339cb" -> "43395f"
+"4339d6" [label = "4339d6 : JCC : mov cl, byte ptr [esp + 0x30] : eax=0x1 "]
+"4339d6" -> "4339f6"
+"4339d6" -> "433bdd"
+"4339f6" [label = "4339f6 : JCC : add dword ptr [esp + 0x60], 7"]
+"4339f6" -> "433a02"
+"4339f6" -> "433a26"
+"433a02" [label = "433a02 : INST : mov eax, 3 : eax=0x3 "]
+"433a02" -> "433a26"
+"433a26" [label = "433a26 : JCC : lea ebp, [eax + eax] : edx<0x3 eax=0x1 "]
+"433a26" -> "433a39"
+"433a26" -> "433a51"
+"433a39" [label = "433a39 : JCC : cmp ebx, dword ptr [esp + 0x4c] : edx<0x3 eax=0x1 "]
+"433a39" -> "433a43"
+"433a39" -> "433c4e"
+"433a43" [label = "433a43 : INST : shl dword ptr [esp + 0x48], 8 : edx<0x3 eax=0x1 "]
+"433a43" -> "433a51"
+"433a51" [label = "433a51 : JCC : mov eax, dword ptr [esp + 0x48] : edx<0x3 "]
+"433a51" -> "433a65"
+"433a51" -> "433a7d"
+"433a65" [label = "433a65 : JMP : mov dword ptr [esp + 0x48], eax : edx<0x3 "]
+"433a65" -> "433a92"
+"433a7d" [label = "433a7d : INST : sub dword ptr [esp + 0x48], eax : edx<0x3 "]
+"433a7d" -> "433a92"
+"433a92" [label = "433a92 : JCC : mov ebp, dword ptr [esp + 0x24] : edx<0x3 "]
+"433a92" -> "433a9d"
+"433a92" -> "433a26"
+"433a9d" [label = "433a9d : JCC : lea edx, [eax - 0x40]"]
+"433a9d" -> "433aac"
+"433a9d" -> "433bd3"
+"433aac" [label = "433aac : JCC : mov eax, edx"]
+"433aac" -> "433ac4"
+"433aac" -> "433ae0"
+"433ac4" [label = "433ac4 : JMP : mov ebp, dword ptr [esp + 0x78] : edx<0xd "]
+"433ac4" -> "433b36"
+"433ae0" [label = "433ae0 : INST : lea edx, [eax - 5]"]
+"433ae0" -> "433aeb"
+"433aeb" [label = "433aeb : JCC : ja 0x433b05"]
+"433aeb" -> "433aed"
+"433aeb" -> "433b05"
+"433aed" [label = "433aed : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"433aed" -> "433af7"
+"433aed" -> "433c4e"
+"433af7" [label = "433af7 : INST : shl dword ptr [esp + 0x48], 8"]
+"433af7" -> "433b05"
+"433b05" [label = "433b05 : JCC : shr dword ptr [esp + 0x48], 1"]
+"433b05" -> "433b11"
+"433b05" -> "433b18"
+"433b11" [label = "433b11 : INST : sub edi, dword ptr [esp + 0x48]"]
+"433b11" -> "433b18"
+"433b18" [label = "433b18 : JCC : dec edx"]
+"433b18" -> "433b1b"
+"433b18" -> "433aeb"
+"433b1b" [label = "433b1b : INST : mov eax, dword ptr [esp + 0x78]"]
+"433b1b" -> "433b36"
+"433b36" [label = "433b36 : INST : mov dword ptr [esp + 0x1c], 1 : edx<0x1a "]
+"433b36" -> "433b43"
+"433b43" [label = "433b43 : JCC : mov ebp, dword ptr [esp + 4] : edx<0x1a eax=0x1 "]
+"433b43" -> "433b59"
+"433b43" -> "433b71"
+"433b59" [label = "433b59 : JCC : cmp ebx, dword ptr [esp + 0x4c] : edx<0x1a eax=0x2 "]
+"433b59" -> "433b63"
+"433b59" -> "433c4e"
+"433b63" [label = "433b63 : INST : shl dword ptr [esp + 0x48], 8 : edx<0x1a eax=0x2 "]
+"433b63" -> "433b71"
+"433b71" [label = "433b71 : JCC : mov eax, dword ptr [esp + 0x48] : edx<0x1a "]
+"433b71" -> "433b86"
+"433b71" -> "433ba1"
+"433b86" [label = "433b86 : JMP : mov dword ptr [esp + 0x48], eax : edx<0x1a "]
+"433b86" -> "433bc0"
+"433ba1" [label = "433ba1 : INST : sub dword ptr [esp + 0x48], eax : edx<0x1a "]
+"433ba1" -> "433bc0"
+"433bc0" [label = "433bc0 : JCC : mov ecx, dword ptr [esp + 0x20] : edx<0x1a "]
+"433bc0" -> "433bd3"
+"433bc0" -> "433b43"
+"433bd3" [label = "433bd3 : JCC : mov esi, dword ptr [esp] : edx<0x3 "]
+"433bd3" -> "433bdd"
+"433bd3" -> "433c37"
+"433bdd" [label = "433bdd : JCC : mov ecx, dword ptr [esp + 0xc]"]
+"433bdd" -> "433bee"
+"433bdd" -> "433c4e"
+"433bee" [label = "433bee : INST : mov eax, dword ptr [esp + 0xa0]"]
+"433bee" -> "433c06"
+"433c06" [label = "433c06 : JCC : mov al, byte ptr [esi]"]
+"433c06" -> "433c17"
+"433c06" -> "433c26"
+"433c17" [label = "433c17 : JCC : mov ebp, dword ptr [esp + 0xa4]"]
+"433c17" -> "433c24"
+"433c17" -> "433c06"
+"433c24" [label = "433c24 : JMP : jmp 0x433c37"]
+"433c24" -> "433c37"
+"433c26" [label = "433c26 : JCC : mov eax, dword ptr [esp + 0xa4]"]
+"433c26" -> "433c37"
+"433c26" -> "4332f1"
+"433c37" [label = "433c37 : JCC : cmp dword ptr [esp + 0x48], 0xffffff"]
+"433c37" -> "433c41"
+"433c37" -> "433c75"
+"433c41" [label = "433c41 : JCC : cmp ebx, dword ptr [esp + 0x4c]"]
+"433c41" -> "433c4c"
+"433c41" -> "433c75"
+"433c4c" [label = "433c4c : INST : jmp 0x433c55 : eax=0x1 "]
+"433c4c" -> "433c75"
+"433c4e" [label = "433c4e : JMP : mov eax, 1 : eax=0x1 "]
+"433c4e" -> "433c75"
+"433c75" [label = "433c75 : RET : add esp, 0x7c : eax=0x1 "]
+}
