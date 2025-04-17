@@ -98,6 +98,36 @@ graph TD
 
 ---
 
+## 📂 Project Directory Structure
+
+```plaintext
+Detection_Comportements_Malveillants/
+│
+├── 📄 README.md                             # Documentation principale (FR ou EN)
+├── 📄 requirements.txt                      # Dépendances Python à installer
+├── 📄 LICENSE                               # Licence du projet (MIT)
+├── 📄 Briefing_Data_Challenge.pdf           # Énoncé officiel du challenge
+│
+├── 📁 notebooks/
+│   └── 📄 sorbonne_challenge_texte_optimisé.ipynb   # Notebook principal avec le pipeline complet
+│
+├── 📁 data/
+│   ├── 📁 digraphs/                          # Fichiers .dot représentant les CFG
+│   ├── 📄 training_set_metadata.csv         # Étiquettes comportementales d'entraînement
+│   ├── 📄 your_data_updated.csv             # Fichier modifié / enrichi si besoin
+│   ├── 📄 predictions.csv                   # Résultats de prédiction (test)
+│   └── 📁 npz_vectors/
+│       ├── tfidf_matrix.npz                # Matrice TF-IDF complète
+│       └── reduced_tfidf_matrix.npz        # (Optionnel) Version réduite après sélection de features / PCA
+│
+├── 📁 visuals/                               # Visualisations (graphiques, CFG, confusion matrix...)
+│   ├── graph_example.png
+│   └── confusion_matrix.png
+│
+└── 📄 readme git.txt                         # Ancienne version brute du README (archivée)
+
+---
+
 ## ▶️ Run the Project
 
 ```bash
