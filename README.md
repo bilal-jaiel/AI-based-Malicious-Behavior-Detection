@@ -113,8 +113,8 @@ AI-based-Malicious-Behavior-Detection/
 │
 ├── 📁 data/
 │   ├── 📁 digraphs/                         # CFG .dot files
-│   ├── 📄 training_set_metadata.csv         # Étiquettes comportementales d'entraînement
-│   ├── 📄 your_data_updated.csv             # Behavioral training tags
+│   ├── 📄 training_set_metadata.csv         # Behavioral training tags
+│   ├── 📄 your_data_updated.csv             # Updated behavioral training tags
 │   ├── 📄 predictions.csv                   # Prediction results (test)
 │   └── 📁 npz_matrices/
 │       ├── tf_batch_0.npz                  # Complete TF batch matrix
